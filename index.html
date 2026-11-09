@@ -1,0 +1,1159 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>כיוון מוסדי לנצרת</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* ===== Common structure (layout-neutral; each style sets tokens and look) ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-size:15px;line-height:1.6}
+[lang=he]{--fb:var(--f-he);--fd:var(--d-he)}
+[lang=ar]{--fb:var(--f-ar);--fd:var(--d-ar)}
+[lang=en]{--fb:var(--f-en);--fd:var(--d-en)}
+[lang]{font-family:var(--fb)}
+h1,h2,h3,.disp{font-family:var(--fd);text-wrap:balance;line-height:1.25}
+h1,h2,h3,p{margin-block:0}
+img,svg{max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+p{max-width:72ch}
+.wrap{max-width:var(--maxw,1180px);margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:-3px}
+[dir=rtl] .ic.fw,[dir=rtl] .ic.sep{transform:scaleX(-1)}
+[dir=ltr] .ic.bk{transform:scaleX(-1)}
+.num{font-variant-numeric:tabular-nums;unicode-bidi:isolate;white-space:nowrap}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+body.locked{overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--hdr-bg,var(--bg))}
+.sketch-bar{font-size:12px;line-height:1.45;padding:5px max(16px,env(safe-area-inset-right,0px)) 5px max(16px,env(safe-area-inset-left,0px));text-align:center;background:var(--sketch-bg);color:var(--sketch-fg)}
+.sketch-bar b{display:inline-block;padding:0 6px;margin-inline-end:6px;border:1px solid currentColor;font-weight:700;letter-spacing:.04em}
+
+/* nav pieces */
+.mega>ul{display:flex;list-style:none;margin:0;padding:0}
+.mega li{position:relative;list-style:none}
+.mega .top{display:flex;align-items:center;gap:4px;text-decoration:none;white-space:nowrap}
+.mega .top .dn{width:14px;height:14px;opacity:.6}
+.mega .panel{position:absolute;inset-inline-start:0;top:100%;min-width:230px;display:none;z-index:50}
+.mega .panel ul{list-style:none;margin:0;padding:0}
+.mega .panel a{display:block;text-decoration:none;white-space:nowrap}
+.mega li:hover>.panel,.mega li:focus-within>.panel{display:block}
+.drawer{position:fixed;inset:0;z-index:80;background:var(--scrim)}
+.drawer-in{position:absolute;inset-block:0;inset-inline-start:0;width:min(360px,88vw);background:var(--surface);color:var(--fg);overflow-y:auto;display:flex;flex-direction:column;gap:12px;padding:calc(12px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.drawer-er{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:13px;padding:8px 10px;background:var(--danger-bg);color:var(--danger)}
+.drawer-er span{display:inline-flex;gap:6px;align-items:center}
+.acc{list-style:none;margin:0;padding:0}
+.acc>li{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:11px 2px;font-weight:600;cursor:pointer}
+.acc summary::-webkit-details-marker{display:none}
+.acc details[open] .dn{transform:rotate(180deg)}
+.acc ul{list-style:none;margin:0;padding:0 8px 10px;display:grid;gap:2px}
+.acc ul a{display:block;padding:6px 4px;text-decoration:none;color:var(--muted)}
+.drawer-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}
+
+/* placeholder art */
+.art{margin:0;position:relative;overflow:hidden;background:var(--art-0);max-width:100%}
+.art svg{display:block;width:100%;height:100%}
+.art .a0{fill:var(--art-0)}.art .a1{fill:var(--art-1)}.art .a2{fill:var(--art-2)}.art .a3{fill:var(--art-3)}.art .a4{fill:var(--art-4)}
+.art path[stroke]{stroke:var(--art-0)}
+.art figcaption{position:absolute;inset-inline-start:8px;bottom:8px;font-size:11px;line-height:1.3;display:flex;gap:4px;align-items:center;padding:3px 7px;background:var(--cap-bg);color:var(--fg);max-width:calc(100% - 16px)}
+.art figcaption .ic{width:13px;height:13px}
+
+/* controls */
+.field{display:flex;flex-direction:column;gap:4px;min-width:0}
+.field label{font-size:13px;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:15px;color:var(--fg);background:var(--field);border:1px solid var(--line);border-radius:var(--r-sm);padding:8px 10px;min-width:0;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:inherit;font-weight:600;font-size:15px;padding:9px 16px;border-radius:var(--r-btn);border:1px solid transparent;cursor:pointer;text-decoration:none;line-height:1.2;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:var(--accent-h)}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--fg)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn.block{width:100%}
+.btn.sm{padding:6px 10px;font-size:13px}
+.icon-btn{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);background:transparent;color:inherit;border-radius:var(--r-sm);cursor:pointer;flex:none}
+.langs{display:inline-flex;border:1px solid var(--line);border-radius:var(--r-sm);overflow:hidden;flex:none}
+.langs button{font:inherit;font-size:13px;line-height:1.2;padding:5px 9px;background:transparent;border:0;color:inherit;cursor:pointer}
+.langs button+button{border-inline-start:1px solid var(--line)}
+.langs button[aria-pressed=true]{background:var(--accent);color:var(--on-accent)}
+.search{display:flex;align-items:stretch;min-width:0}
+.search input{border-start-end-radius:0;border-end-end-radius:0;border-inline-end:0}
+.search button{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);padding:0 12px;border-start-end-radius:var(--r-sm);border-end-end-radius:var(--r-sm);cursor:pointer;font:inherit;font-weight:600}
+input[type=search]::-webkit-search-decoration{display:none}
+.tr-note{display:flex;gap:8px;align-items:flex-start;font-size:13px;padding:8px 12px;border:1px dashed var(--line);color:var(--muted);margin:0}
+.tr-note .ic{margin-top:2px}
+.demo-note{font-size:12px;color:var(--muted);display:flex;gap:6px;align-items:center;margin:0}
+.demo-note .ic{width:14px;height:14px}
+.form-ok{color:var(--ok);display:flex;gap:6px;align-items:center;font-weight:600}
+.row-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between}
+
+/* shared lists and bits */
+.muted{color:var(--muted)}.small{font-size:12px}
+.ticks{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.ticks li{display:flex;gap:8px;align-items:flex-start}
+.ticks .ic{color:var(--accent);margin-top:4px;width:16px;height:16px}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.chips li{padding:3px 10px;border:1px solid var(--line);border-radius:999px;font-size:13px}
+.tbl-wrap{overflow-x:auto;max-width:100%}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th,.tbl td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
+.tbl th{font-weight:600;color:var(--muted);font-size:13px}
+.cols3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:16px}
+.cols3 h3{display:flex;align-items:center;gap:6px;font-size:16px;margin-bottom:4px}
+.avatar{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--avatar-bg);color:var(--avatar-fg);font-weight:700;flex:none;font-family:var(--f-he);font-size:15px;line-height:1}
+.avatar.sm{width:34px;height:34px;font-size:13px}
+.avatar.xl{width:96px;height:96px;font-size:30px}
+.kv{margin:0;display:grid;gap:8px}
+.kv div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.kv dt{color:var(--muted)}.kv dd{margin:0;text-align:end}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:13px;color:var(--muted)}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{width:14px;height:14px;opacity:.6}
+.phones{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.phones li{display:flex;justify-content:space-between;gap:12px}
+.fbase{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12px}
+.flinks{display:flex;gap:12px;flex-wrap:wrap}
+
+/* shared page structure */
+.page-body{padding-block:24px 56px;display:grid;gap:32px}
+.page-body>*{min-width:0}
+.block{scroll-margin-top:var(--hdr-h,96px);display:grid;gap:12px;align-content:start;min-width:0}
+.block>h2{display:flex;align-items:center;gap:8px}
+.he-only{text-align:right;display:grid;gap:inherit}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center}
+.split>div{display:grid;gap:10px}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+.art.side{aspect-ratio:4/3}
+.timeline{list-style:none;margin:0;padding:0;border-inline-start:2px solid var(--line)}
+.timeline li{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:8px 16px;position:relative}
+.timeline li::before{content:"";position:absolute;inset-inline-start:-6px;top:16px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+@media (max-width:480px){.timeline li{grid-template-columns:1fr;gap:0}}
+.er-alert{display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--danger-bg);color:var(--danger);border:1px solid var(--danger)}
+.er-alert div{display:flex;flex-direction:column}
+.er-wait{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;padding:12px 16px;border:1px solid var(--line)}
+.er-wait b{font-size:22px}.er-wait small{color:var(--muted)}
+.er-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:16px}
+.er-card{padding:16px;border:1px solid var(--line)}
+.er-card h2{font-size:18px}
+.news-list{display:grid}
+.news-item{padding:16px 0;border-bottom:1px solid var(--line);display:grid;gap:4px;justify-items:start}
+.news-item h2{font-size:18px}
+.news-item time{color:var(--muted);font-size:13px}
+.tag{font-size:12px;padding:1px 8px;background:var(--tag-bg);color:var(--tag-fg);display:inline-block}
+.events{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.events li{display:flex;gap:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.jobs{list-style:none;padding:0;margin:0}
+.jobs li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.jobs small{display:block;color:var(--muted)}
+.amounts{display:flex;flex-wrap:wrap;gap:8px}
+.amounts label{cursor:pointer;position:relative}
+.amounts input{position:absolute;opacity:0;width:1px;height:1px}
+.amounts span{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:var(--r-sm)}
+.amounts input:checked+span{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.amounts input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.donate-form{display:grid;gap:12px;max-width:520px;justify-items:start}
+.donate-form .field{width:100%}
+.res{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.res a{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);text-decoration:none;border-radius:var(--r-sm)}
+.res a:hover{border-color:var(--accent)}
+.res small{display:block;color:var(--muted)}.res span{min-width:0}
+.search-page{max-width:640px}
+.search-page input{padding-block:11px}
+.empty{padding:16px;border:1px dashed var(--line);margin:0}
+.heads{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:8px}
+.heads a{display:flex;gap:10px;align-items:center;text-decoration:none;padding:8px 10px;border:1px solid var(--line);border-radius:var(--r-sm)}
+.heads a:hover{border-color:var(--accent)}
+.heads small{display:block;color:var(--muted);font-size:12px}
+.doc-profile{display:grid;grid-template-columns:280px minmax(0,1fr);gap:32px;align-items:start}
+.doc-side{display:grid;gap:14px;justify-items:start;padding:20px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface)}
+.doc-side .kv{width:100%}
+.doc-main{display:grid;gap:12px;max-width:68ch}
+.doc-main .he-only{gap:12px}
+@media (max-width:760px){.doc-profile{grid-template-columns:minmax(0,1fr)}}
+.extras{padding-top:8px}
+
+/* Layout: institutional grid, white field, one deep hospital blue, navy utility + footer bands, lots of air. */
+:root{
+  --bg:#ffffff;--surface:#f3f6fa;--fg:#0f1e33;--muted:#56677e;--line:#dbe3ec;--field:#ffffff;
+  --accent:#1a56a6;--accent-h:#14478c;--on-accent:#ffffff;--navy:#0b2e5c;--on-navy:#e6eef8;--navy-muted:#a9bdd6;
+  --danger:#b42318;--danger-bg:#fdf1f0;--ok:#16794a;--tag-bg:#e8f0fa;--tag-fg:#1a56a6;
+  --avatar-bg:#e3ecf7;--avatar-fg:#1a56a6;--scrim:rgba(8,20,38,.45);--cap-bg:rgba(255,255,255,.88);
+  --sketch-bg:#fff4d6;--sketch-fg:#5c4400;--hdr-bg:#0b2e5c;
+  --art-0:#e7eef7;--art-1:#c9d9ec;--art-2:#a8c2e0;--art-3:#f2d9a6;--art-4:#ffffff;
+  --r-sm:4px;--r-md:6px;--r-btn:4px;--maxw:1200px;--hdr-h:120px;
+  --f-he:"IBM Plex Sans Hebrew","Arial Hebrew",Arial,sans-serif;--d-he:"IBM Plex Sans Hebrew","Arial Hebrew",Arial,sans-serif;
+  --f-ar:"IBM Plex Sans Arabic","Geeza Pro",Tahoma,sans-serif;--d-ar:"IBM Plex Sans Arabic","Geeza Pro",Tahoma,sans-serif;
+  --f-en:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;--d-en:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b1420;--surface:#111d2c;--fg:#e4ebf4;--muted:#93a4ba;--line:#22324a;--field:#0e1926;
+  --accent:#6ea8f0;--accent-h:#8dbaf3;--on-accent:#06121f;--navy:#071a33;--on-navy:#dbe6f3;--navy-muted:#8ea6c4;
+  --danger:#ff8a80;--danger-bg:#2a1414;--ok:#5fd39a;--tag-bg:#15263c;--tag-fg:#8dbaf3;
+  --avatar-bg:#18304f;--avatar-fg:#a9c8f2;--scrim:rgba(0,0,0,.6);--cap-bg:rgba(11,20,32,.85);
+  --sketch-bg:#3a2f12;--sketch-fg:#f4dc9a;--hdr-bg:#071a33;
+  --art-0:#13233a;--art-1:#1b3354;--art-2:#244670;--art-3:#6b5a33;--art-4:#2c3f5a;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b1420;--surface:#111d2c;--fg:#e4ebf4;--muted:#93a4ba;--line:#22324a;--field:#0e1926;
+  --accent:#6ea8f0;--accent-h:#8dbaf3;--on-accent:#06121f;--navy:#071a33;--on-navy:#dbe6f3;--navy-muted:#8ea6c4;
+  --danger:#ff8a80;--danger-bg:#2a1414;--ok:#5fd39a;--tag-bg:#15263c;--tag-fg:#8dbaf3;
+  --avatar-bg:#18304f;--avatar-fg:#a9c8f2;--scrim:rgba(0,0,0,.6);--cap-bg:rgba(11,20,32,.85);
+  --sketch-bg:#3a2f12;--sketch-fg:#f4dc9a;--hdr-bg:#071a33;
+  --art-0:#13233a;--art-1:#1b3354;--art-2:#244670;--art-3:#6b5a33;--art-4:#2c3f5a;color-scheme:dark}
+body{background:var(--bg);color:var(--fg)}
+h1{font-size:clamp(26px,4vw,40px);font-weight:600;letter-spacing:-.01em}
+h2{font-size:22px;font-weight:600}
+h3{font-size:16px;font-weight:600}
+.lead{font-size:17px;color:var(--muted)}
+.eyebrow{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600}
+.lnk{display:inline-flex;align-items:center;gap:4px;color:var(--accent);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}
+.lnk:hover{text-decoration:underline}
+
+/* utility strip */
+.util{background:var(--navy);color:var(--on-navy);font-size:13px}
+.util-in{display:flex;align-items:center;gap:16px;min-height:40px;flex-wrap:wrap;padding-block:4px}
+.er-pill{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+.er-pill .ic{color:#ff9b91}
+.sepdot{opacity:.5}
+.util-links{display:flex;gap:16px;margin-inline-start:auto}
+.util-links a{text-decoration:none;color:var(--navy-muted)}.util-links a:hover{color:var(--on-navy)}
+.util-tools{display:flex;gap:8px;align-items:center}
+.util .langs,.util .icon-btn{border-color:rgba(255,255,255,.25)}
+.util .langs button+button{border-color:rgba(255,255,255,.25)}
+.util .langs button[aria-pressed=true]{background:var(--on-navy);color:var(--navy)}
+.util .icon-btn{width:30px;height:30px}
+
+/* header */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--bg);border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:16px;min-height:68px}
+.burger{display:none}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-inline-start:auto;min-width:0}
+.brand-t{display:grid;line-height:1.15;text-align:end}
+.brand-t b{font-size:20px;font-weight:700;color:var(--navy)}
+:root[data-theme="dark"] .brand-t b{color:var(--fg)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand-t b{color:var(--fg)}}
+.brand-t small{font-size:12px;color:var(--muted);letter-spacing:.04em}
+.hdr-search{flex:1;max-width:420px}
+.navrow{border-top:1px solid var(--line)}
+.mega>ul{gap:2px}
+.mega .top{padding:11px 12px;font-weight:500;font-size:15px;border-bottom:2px solid transparent}
+.mega li.on>.top,.mega .top:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.mega .panel{background:var(--bg);border:1px solid var(--line);border-top:2px solid var(--accent);padding:8px 0}
+.mega .panel a{padding:8px 16px;font-size:14px}
+.mega .panel a:hover{background:var(--surface);color:var(--accent)}
+@media (max-width:1080px){
+  .navrow,.hdr-search{display:none}
+  .burger{display:inline-grid}
+  .util-links{display:none}
+  .util-tools{margin-inline-start:auto}
+}
+@media (max-width:560px){
+  .hdr-in{min-height:58px;gap:10px}
+  .hdr-book span{display:none}.hdr-book{padding:8px 10px}
+  .brand-t b{font-size:17px}
+  .er-pill{font-size:12px}
+}
+
+/* hero */
+.hero{background:var(--surface);border-bottom:1px solid var(--line)}
+.hero-in{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding-block:48px}
+.hero-txt{display:grid;gap:16px;min-width:0}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+.hero-search{max-width:520px}
+.hero-search input{padding-block:11px}
+.hero-art{aspect-ratio:4/3;border-radius:var(--r-md)}
+@media (max-width:860px){.hero-in{grid-template-columns:minmax(0,1fr);padding-block:28px;gap:20px}.hero-art{aspect-ratio:16/9}}
+
+/* quick actions */
+.quick{border-bottom:1px solid var(--line)}
+.quick-row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.quick-row li+li{border-inline-start:1px solid var(--line)}
+.quick-row a{display:flex;align-items:center;gap:10px;padding:18px 16px;text-decoration:none;font-weight:600}
+.quick-row a .ic:first-child{color:var(--accent);width:22px;height:22px}
+.quick-row a .fw{margin-inline-start:auto;opacity:.4}
+.quick-row a:hover{background:var(--surface);color:var(--accent)}
+@media (max-width:860px){.quick-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.quick-row li{border-bottom:1px solid var(--line)}.quick-row li:nth-child(odd){border-inline-start:0}.quick-row li:last-child{grid-column:1/-1}}
+
+/* ER band */
+.er-band{background:var(--danger-bg);border-bottom:1px solid var(--line)}
+.er-in{display:flex;justify-content:space-between;gap:24px;align-items:center;padding-block:22px;flex-wrap:wrap}
+.er-in>div{display:grid;gap:4px;min-width:0}
+.er-in h2{display:flex;gap:8px;align-items:center;color:var(--danger);font-size:20px}
+.er-nums{display:flex;gap:28px;margin:0;flex-wrap:wrap}
+.er-nums dt{font-size:12px;color:var(--muted)}
+.er-nums dd{margin:0;font-size:20px;font-weight:700}
+.er-nums small{font-size:11px;font-weight:400;color:var(--muted)}
+
+/* sections */
+.sec{padding-block:48px}
+.sec.alt{background:var(--surface)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.sec-head>div{display:grid;gap:4px}
+.dgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-inline-start:1px solid var(--line)}
+.dgrid li{border-bottom:1px solid var(--line);border-inline-end:1px solid var(--line)}
+.dgrid a{display:grid;gap:6px;padding:20px;text-decoration:none;height:100%;align-content:start}
+.dgrid a:hover{background:var(--surface)}
+.dgrid a:hover b{color:var(--accent)}
+.dgrid small{color:var(--muted);font-size:13px;line-height:1.5}
+.dic{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--tag-bg);color:var(--accent)}
+@media (max-width:960px){.dgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.dgrid a{padding:14px}.dgrid small{display:none}}
+.why{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+.why-list{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:18px}
+.why-list li{display:flex;gap:14px}
+.why-list .ic{color:var(--accent);width:24px;height:24px;margin-top:2px}
+.why-list p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:1fr 1fr;margin:0;border-top:1px solid var(--line);border-inline-start:1px solid var(--line);background:var(--bg)}
+.stats div{padding:20px;border-bottom:1px solid var(--line);border-inline-end:1px solid var(--line);display:flex;flex-direction:column-reverse;gap:2px}
+.stats dd{margin:0;font-size:32px;font-weight:600;color:var(--accent);line-height:1.1}
+.stats dt{font-size:13px;color:var(--muted)}
+@media (max-width:860px){.why{grid-template-columns:minmax(0,1fr);gap:24px}}
+.docrow{list-style:none;margin:0 0 8px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.docrow a{display:grid;justify-items:center;text-align:center;gap:6px;padding:20px 12px;border:1px solid var(--line);border-radius:var(--r-md);text-decoration:none}
+.docrow a:hover{border-color:var(--accent)}
+.docrow .avatar{width:64px;height:64px;font-size:20px}
+.docrow small{color:var(--muted);font-size:13px}
+@media (max-width:860px){.docrow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.two{display:grid;grid-template-columns:1.3fr 1fr;gap:48px}
+@media (max-width:860px){.two{grid-template-columns:minmax(0,1fr);gap:32px}}
+.nlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.nlist a{display:grid;grid-template-columns:auto auto 1fr;gap:4px 12px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.nlist b{grid-column:1/-1;font-weight:600}
+.nlist a:hover b{color:var(--accent)}
+.nlist time{font-size:13px;color:var(--muted)}
+.nlist .tag{justify-self:start}
+.visit{display:grid;gap:12px;align-content:start}
+.vcard{padding:16px;border:1px solid var(--line);background:var(--bg);display:grid;gap:6px;border-radius:var(--r-md)}
+.vcard h3{display:flex;align-items:center;gap:8px}
+.don{background:var(--navy);color:var(--on-navy)}
+.don-in{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:36px;flex-wrap:wrap}
+.don-in>div{display:grid;gap:6px}
+.don p{color:var(--navy-muted)}
+.btn.light{background:var(--on-navy);color:var(--navy)}
+
+/* page head */
+.phead{background:var(--surface);border-bottom:1px solid var(--line)}
+.phead .wrap{padding-block:24px 28px;display:grid;gap:8px}
+
+/* departments list */
+.filter-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md)}
+.filter-bar .field{flex:1 1 200px}
+.filter-bar .field.grow{flex:2 1 260px}
+#dept-results{display:grid;gap:32px}
+.count{font-size:13px;font-weight:500;color:var(--muted);border:1px solid var(--line);padding:0 8px;border-radius:999px}
+.drows{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;border-top:1px solid var(--line)}
+.drows a{display:flex;align-items:center;gap:14px;padding:14px 4px;border-bottom:1px solid var(--line);text-decoration:none}
+.drows a:hover b{color:var(--accent)}
+.dtx{display:grid;min-width:0}.dtx small{color:var(--muted);font-size:13px}
+.drows .fw{margin-inline-start:auto;opacity:.4}
+@media (max-width:760px){.drows{grid-template-columns:minmax(0,1fr)}}
+
+/* department page */
+.dept-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:40px;align-items:start}
+.dept-main{display:grid;gap:28px;min-width:0}
+.dept-art{aspect-ratio:21/9;border-radius:var(--r-md)}
+.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:560px){.two-col{grid-template-columns:minmax(0,1fr)}}
+.team{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:10px}
+.team a{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid var(--line);border-radius:var(--r-md);text-decoration:none}
+.team a:hover{border-color:var(--accent)}
+.team small{display:block;color:var(--muted);font-size:12px}
+.dept-side{display:grid;gap:16px;position:sticky;top:calc(var(--hdr-h) + 16px)}
+.side-box{padding:18px;border:1px solid var(--line);border-radius:var(--r-md);display:grid;gap:12px;background:var(--bg)}
+.side-box .kv dt{display:flex;gap:6px;align-items:center}
+.muted-box{background:var(--danger-bg);border-color:transparent;color:var(--danger)}
+.muted-box h3{display:flex;gap:6px;align-items:flex-start;font-size:14px}
+@media (max-width:960px){.dept-layout{grid-template-columns:minmax(0,1fr)}.dept-side{position:static}}
+
+/* doctors */
+.doc-tbl td{vertical-align:middle}
+.dname{display:flex;align-items:center;gap:10px;text-decoration:none}
+.dname small{display:block;color:var(--muted);font-size:12px}
+.dname:hover b{color:var(--accent)}
+@media (max-width:700px){
+  .doc-tbl thead{display:none}
+  .doc-tbl tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .doc-tbl td{border:0;padding:0}
+  .doc-tbl td:nth-child(2),.doc-tbl td:nth-child(3){grid-column:1;font-size:13px;color:var(--muted);padding-inline-start:44px}
+  .doc-tbl td:nth-child(4){grid-row:1;grid-column:2}
+}
+
+/* appointment */
+.stepper{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
+.stepper li{display:flex;align-items:center;gap:8px;padding:12px;font-size:14px;color:var(--muted);min-width:0}
+.stepper li+li{border-inline-start:1px solid var(--line)}
+.stepper span{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--line);font-size:12px;flex:none}
+.stepper em{font-style:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.stepper li.cur{color:var(--fg);font-weight:600;background:var(--surface)}
+.stepper li.cur span{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.stepper li.past span{border-color:var(--accent);color:var(--accent)}
+@media (max-width:700px){.stepper li em{display:none}.stepper li.cur em{display:inline}.stepper{grid-template-columns:auto auto auto auto auto}.stepper li.cur{grid-column:auto}}
+.appt-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
+.appt-body{display:grid;gap:16px;min-width:0}
+@media (max-width:960px){.appt-layout{grid-template-columns:minmax(0,1fr)}}
+.pick-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr));gap:8px}
+.pick{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--bg);color:var(--fg);font:inherit;text-align:start;cursor:pointer;min-width:0}
+.pick:hover,.pick.on{border-color:var(--accent)}
+.pick .ic{color:var(--accent)}
+.pick-list{display:grid;gap:8px}
+.pick.row span{display:grid;min-width:0}.pick.row small{color:var(--muted);font-size:12px}
+.pick.row em{margin-inline-start:auto;font-style:normal;font-size:12px;color:var(--ok);white-space:nowrap}
+@media (max-width:560px){.pick.row{flex-wrap:wrap}.pick.row em{margin-inline-start:44px}}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:6px}
+.day{display:grid;justify-items:center;gap:0;padding:8px 4px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg);color:var(--fg);font:inherit;cursor:pointer}
+.day small{color:var(--muted);font-size:12px}.day em{font-style:normal;font-size:11px;color:var(--ok)}
+.day.on{border-color:var(--accent);background:var(--tag-bg)}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:6px}
+.slot{padding:8px 4px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--bg);color:var(--fg);font:inherit;cursor:pointer}
+.slot:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.slot:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+.appt-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:640px}
+.appt-form .demo-note,.appt-form .row-btns{grid-column:1/-1}
+@media (max-width:560px){.appt-form{grid-template-columns:minmax(0,1fr)}}
+.done{display:grid;gap:12px;justify-items:start;max-width:520px;padding:24px;border:1px solid var(--line);border-radius:var(--r-md)}
+.done>.ic{width:36px;height:36px;color:var(--ok)}
+.done .kv{width:100%}
+.ref{font-size:24px;font-weight:700;color:var(--accent)}
+.appt-sum{position:sticky;top:calc(var(--hdr-h) + 16px)}
+@media (max-width:960px){.appt-sum{position:static}}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media (max-width:860px){.contact-grid{grid-template-columns:minmax(0,1fr)}}
+.addr{display:flex;gap:6px;align-items:center;color:var(--muted)}
+.art.map{aspect-ratio:16/9;border-radius:var(--r-md)}
+.cform{display:grid;gap:12px;justify-items:start}
+.cform .field{width:100%}
+
+/* footer */
+.ftr{background:var(--navy);color:var(--on-navy);padding-top:44px;margin-top:0}
+.ftr-in{display:grid;grid-template-columns:300px 1fr;gap:48px;padding-bottom:32px}
+.fabout{display:grid;gap:10px;align-content:start}
+.fabout b{font-size:18px}
+.fabout p{color:var(--navy-muted);font-size:14px}
+.fabout .addr{color:var(--navy-muted)}
+.ftr .phones{font-size:14px;padding-top:8px;border-top:1px solid rgba(255,255,255,.12)}
+.fcols{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+.fcol h3{font-size:14px;margin-bottom:8px}
+.fcol ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.fcol a{color:var(--navy-muted);text-decoration:none;font-size:13px}.fcol a:hover{color:var(--on-navy)}
+.fbase{padding-block:16px;border-top:1px solid rgba(255,255,255,.12);color:var(--navy-muted)}
+.fbase a{color:var(--navy-muted)}
+@media (max-width:1080px){.ftr-in{grid-template-columns:minmax(0,1fr)}.fcols{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+</style>
+<div id="app"></div>
+<noscript>האתר דורש JavaScript</noscript>
+<script>
+/* ===== Shared content: Nazareth Hospital sketches (all names, phones and figures are examples) ===== */
+const HOSP = {
+  name: { he: 'בית החולים נצרת', ar: 'مستشفى الناصرة', en: 'Nazareth Hospital' },
+  sub: { he: 'EMMS · מאז 1861', ar: 'EMMS · منذ 1861', en: 'EMMS · since 1861' },
+  phone: '04-XXX-0000',
+  er: '04-XXX-1111',
+  appt: '1-700-XXX-XXX',
+  email: 'info@example-hospital.org.il',
+  addr: { he: 'רחוב בית החולים, נצרת (כתובת לדוגמה)', ar: 'شارع المستشفى، الناصرة (عنوان للتوضيح)', en: 'Hospital St., Nazareth (sample address)' }
+};
+
+const UI = {
+  sketch: { he: 'סקיצת עיצוב ראשונית לעיון · אינו האתר הרשמי של בית החולים · טלפונים, שמות ונתונים לדוגמה', ar: 'مسودة تصميم أولية للاطلاع · ليس الموقع الرسمي للمستشفى · الأرقام والأسماء والمعطيات للتوضيح', en: 'Early design sketch for review · not the hospital’s official site · phones, names and figures are examples' },
+  sketchShort: { he: 'סקיצה', ar: 'مسودة', en: 'Sketch' },
+  erOpen: { he: 'המיון פתוח 24/7', ar: 'الطوارئ مفتوحة 24/7', en: 'ER open 24/7' },
+  erLine: { he: 'מיון', ar: 'الطوارئ', en: 'ER' },
+  mda: { he: 'מד״א', ar: 'نجمة داود الحمراء', en: 'Ambulance' },
+  switchboard: { he: 'מוקד', ar: 'المقسم', en: 'Switchboard' },
+  apptLine: { he: 'זימון תורים', ar: 'حجز الدور', en: 'Appointments' },
+  search: { he: 'חיפוש', ar: 'بحث', en: 'Search' },
+  searchPh: { he: 'חיפוש מחלקה, רופא או שירות', ar: 'ابحث عن قسم، طبيب أو خدمة', en: 'Search a department, doctor or service' },
+  menu: { he: 'תפריט', ar: 'القائمة', en: 'Menu' },
+  close: { he: 'סגירה', ar: 'إغلاق', en: 'Close' },
+  theme: { he: 'מצב כהה או בהיר', ar: 'الوضع الداكن أو الفاتح', en: 'Dark or light mode' },
+  book: { he: 'קביעת תור', ar: 'حجز دور', en: 'Book an appointment' },
+  bookShort: { he: 'זימון תור', ar: 'احجز دوراً', en: 'Book' },
+  allDepts: { he: 'כל המחלקות', ar: 'كل الأقسام', en: 'All departments' },
+  findDoctor: { he: 'מציאת רופא', ar: 'ابحث عن طبيب', en: 'Find a doctor' },
+  more: { he: 'למידע נוסף', ar: 'لمزيد من المعلومات', en: 'Learn more' },
+  readMore: { he: 'לקריאה', ar: 'اقرأ المزيد', en: 'Read' },
+  allNews: { he: 'כל החדשות', ar: 'كل الأخبار', en: 'All news' },
+  home: { he: 'דף הבית', ar: 'الرئيسية', en: 'Home' },
+  trNote: { he: '', ar: 'محتوى هذه الصفحة سيُترجم إلى العربية في المرحلة القادمة. يظهر هنا بالعبرية في المسودة.', en: 'This page will be translated into English in the next stage. In the sketch it appears in Hebrew.' },
+  inpatient: { he: 'מחלקות אשפוז', ar: 'أقسام المبيت', en: 'Inpatient wards' },
+  clinics: { he: 'מרפאות חוץ', ar: 'العيادات الخارجية', en: 'Outpatient clinics' },
+  institutes: { he: 'מכונים ובדיקות', ar: 'المعاهد والفحوصات', en: 'Institutes & tests' },
+  doctors: { he: 'רופאים', ar: 'الأطباء', en: 'Doctors' },
+  head: { he: 'מנהל/ת המחלקה', ar: 'مدير/ة القسم', en: 'Head of department' },
+  senior: { he: 'רופא/ה בכיר/ה', ar: 'طبيب/ة كبير/ة', en: 'Senior physician' },
+  specialist: { he: 'רופא/ה מומחה/ית', ar: 'طبيب/ة مختص/ة', en: 'Specialist' },
+  speaks: { he: 'שפות', ar: 'اللغات', en: 'Languages' },
+  lang_he: { he: 'עברית', ar: 'العبرية', en: 'Hebrew' },
+  lang_ar: { he: 'ערבית', ar: 'العربية', en: 'Arabic' },
+  lang_en: { he: 'אנגלית', ar: 'الإنجليزية', en: 'English' },
+  lang_ru: { he: 'רוסית', ar: 'الروسية', en: 'Russian' },
+  anyDept: { he: 'כל המחלקות', ar: 'كل الأقسام', en: 'All departments' },
+  anyLang: { he: 'כל השפות', ar: 'كل اللغات', en: 'Any language' },
+  results: { he: 'תוצאות', ar: 'نتائج', en: 'results' },
+  noResults: { he: 'לא נמצאו תוצאות. נסו מילה אחרת או התקשרו למוקד.', ar: 'لم يتم العثور على نتائج. جرّبوا كلمة أخرى أو اتصلوا بالمقسم.', en: 'No results. Try another word or call the switchboard.' },
+  hoursTitle: { he: 'שעות ביקור', ar: 'ساعات الزيارة', en: 'Visiting hours' },
+  parking: { he: 'הגעה וחניה', ar: 'الوصول والموقف', en: 'Getting here & parking' },
+  phoneLbl: { he: 'טלפון', ar: 'هاتف', en: 'Phone' },
+  location: { he: 'מיקום', ar: 'الموقع', en: 'Location' },
+  services: { he: 'שירותים וטיפולים', ar: 'الخدمات والعلاجات', en: 'Services & treatments' },
+  team: { he: 'הצוות', ar: 'الطاقم', en: 'Team' },
+  examples: { he: 'שמות לדוגמה', ar: 'أسماء للتوضيح', en: 'Sample names' },
+  sendDemo: { he: 'שליחה', ar: 'إرسال', en: 'Send' },
+  demoNote: { he: 'זו סקיצה: שום פרט לא נשלח ולא נשמר.', ar: 'هذه مسودة: لا يتم إرسال أو حفظ أي معلومة.', en: 'This is a sketch: nothing is sent or saved.' },
+  footerAbout: { he: 'בית חולים כללי בלב נצרת, המשרת את תושבי הגליל מאז 1861. רפואה מתקדמת, יחס אישי, בעברית, בערבית ובאנגלית.', ar: 'مستشفى عام في قلب الناصرة يخدم أهالي الجليل منذ 1861. طب متقدم ومعاملة شخصية، بالعربية والعبرية والإنجليزية.', en: 'A general hospital in the heart of Nazareth, serving the Galilee since 1861. Advanced medicine and personal care, in Arabic, Hebrew and English.' },
+  rights: { he: '© בית החולים נצרת · סקיצת עיצוב, אינה לפרסום', ar: '© مستشفى الناصرة · مسودة تصميم، ليست للنشر', en: '© Nazareth Hospital · design sketch, not for publication' },
+  access: { he: 'הצהרת נגישות', ar: 'بيان إتاحة', en: 'Accessibility' },
+  privacy: { he: 'מדיניות פרטיות', ar: 'سياسة الخصوصية', en: 'Privacy' },
+  open247: { he: 'פתוח 24 שעות', ar: 'مفتوح 24 ساعة', en: 'Open 24 hours' },
+  quickLinks: { he: 'קישורים מהירים', ar: 'روابط سريعة', en: 'Quick links' },
+  contactUs: { he: 'יצירת קשר', ar: 'اتصل بنا', en: 'Contact' },
+  followUs: { he: 'עקבו אחרינו', ar: 'تابعونا', en: 'Follow us' },
+  next: { he: 'המשך', ar: 'التالي', en: 'Next' },
+  back: { he: 'חזרה', ar: 'رجوع', en: 'Back' },
+  pickDept: { he: 'בחירת מחלקה או מרפאה', ar: 'اختيار القسم أو العيادة', en: 'Choose a clinic' },
+  pickDoctor: { he: 'בחירת רופא', ar: 'اختيار الطبيب', en: 'Choose a doctor' },
+  pickTime: { he: 'בחירת מועד', ar: 'اختيار الموعد', en: 'Choose a time' },
+  details: { he: 'פרטים אישיים', ar: 'التفاصيل الشخصية', en: 'Your details' },
+  confirm: { he: 'אישור', ar: 'تأكيد', en: 'Confirm' },
+  anyDoctor: { he: 'הרופא הראשון שפנוי', ar: 'أول طبيب متاح', en: 'First available doctor' },
+  fullName: { he: 'שם מלא', ar: 'الاسم الكامل', en: 'Full name' },
+  idNum: { he: 'תעודת זהות', ar: 'رقم الهوية', en: 'ID number' },
+  mobile: { he: 'טלפון נייד', ar: 'هاتف نقال', en: 'Mobile' },
+  hmo: { he: 'קופת חולים', ar: 'صندوق المرضى', en: 'Health fund' },
+  bookIt: { he: 'קביעת התור', ar: 'تثبيت الدور', en: 'Book it' },
+  booked: { he: 'התור נקבע (הדגמה)', ar: 'تم حجز الدور (عرض توضيحي)', en: 'Appointment booked (demo)' },
+  newAppt: { he: 'תור חדש', ar: 'دور جديد', en: 'New appointment' },
+  nearest: { he: 'התור הקרוב', ar: 'أقرب دور', en: 'Next available' },
+  free: { he: 'פנויים', ar: 'متاحة', en: 'free' },
+  minutes: { he: 'דק׳', ar: 'د', en: 'min' },
+  emergencyNow: { he: 'מצב חירום? חייגו 101 או הגיעו למיון', ar: 'حالة طارئة؟ اتصلوا بـ 101 أو توجهوا للطوارئ', en: 'Emergency? Call 101 or come to the ER' },
+  waitNow: { he: 'זמן המתנה משוער במיון עכשיו', ar: 'وقت الانتظار المتوقع في الطوارئ الآن', en: 'Estimated ER wait now' },
+  sample: { he: 'נתון לדוגמה', ar: 'معطى للتوضيح', en: 'sample figure' },
+  photoSlot: { he: 'מקום לצילום', ar: 'مكان لصورة', en: 'Photo slot' },
+  days: { he: ['א׳','ב׳','ג׳','ד׳','ה׳','ו׳','ש׳'], ar: ['أحد','إثنين','ثلاثاء','أربعاء','خميس','جمعة','سبت'], en: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'] },
+  months: { he: ['ינו׳','פבר׳','מרץ','אפר׳','מאי','יוני','יולי','אוג׳','ספט׳','אוק׳','נוב׳','דצמ׳'], ar: ['كانون الثاني','شباط','آذار','نيسان','أيار','حزيران','تموز','آب','أيلول','تشرين الأول','تشرين الثاني','كانون الأول'], en: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] }
+};
+
+/* Navigation: categories and sub-categories. r = hash route (page or page-section). */
+const NAV = [
+  { id: 'departments', l: { he: 'מחלקות ושירותים', ar: 'الأقسام والخدمات', en: 'Departments' }, items: [
+    { r: 'departments-inpatient', l: { he: 'מחלקות אשפוז', ar: 'أقسام المبيت', en: 'Inpatient wards' } },
+    { r: 'departments-clinics', l: { he: 'מרפאות חוץ', ar: 'العيادات الخارجية', en: 'Outpatient clinics' } },
+    { r: 'departments-institutes', l: { he: 'מכונים ובדיקות', ar: 'المعاهد والفحوصات', en: 'Institutes & tests' } },
+    { r: 'dept-maternity', l: { he: 'נשים ויולדות', ar: 'النساء والولادة', en: 'Women & maternity' } },
+    { r: 'dept-cardiology', l: { he: 'קרדיולוגיה', ar: 'أمراض القلب', en: 'Cardiology' } },
+    { r: 'dept-imaging', l: { he: 'דימות', ar: 'التصوير الطبي', en: 'Imaging' } }
+  ] },
+  { id: 'doctors', l: { he: 'רופאים', ar: 'الأطباء', en: 'Doctors' }, items: [
+    { r: 'doctors', l: { he: 'חיפוש רופא', ar: 'البحث عن طبيب', en: 'Find a doctor' } },
+    { r: 'doctors-heads', l: { he: 'מנהלי מחלקות', ar: 'مدراء الأقسام', en: 'Department heads' } },
+    { r: 'doctors-second', l: { he: 'חוות דעת שנייה', ar: 'رأي طبي ثانٍ', en: 'Second opinion' } }
+  ] },
+  { id: 'appointment', l: { he: 'קביעת תור', ar: 'حجز دور', en: 'Appointments' }, items: [
+    { r: 'appointment', l: { he: 'תור למרפאה', ar: 'دور للعيادة', en: 'Clinic appointment' } },
+    { r: 'appointment-imaging', l: { he: 'תור לבדיקה ודימות', ar: 'دور لفحص أو تصوير', en: 'Tests & imaging' } },
+    { r: 'appointment-manage', l: { he: 'שינוי או ביטול תור', ar: 'تغيير أو إلغاء دور', en: 'Change or cancel' } },
+    { r: 'appointment-referrals', l: { he: 'הפניות והתחייבויות', ar: 'التحويلات والالتزامات', en: 'Referrals & approvals' } }
+  ] },
+  { id: 'visitors', l: { he: 'למטופלים ולמבקרים', ar: 'للمرضى والزوار', en: 'Patients & visitors' }, items: [
+    { r: 'visitors-hours', l: { he: 'שעות ביקור', ar: 'ساعات الزيارة', en: 'Visiting hours' } },
+    { r: 'visitors-parking', l: { he: 'הגעה וחניה', ar: 'الوصول والموقف', en: 'Getting here & parking' } },
+    { r: 'visitors-admission', l: { he: 'אשפוז ושחרור', ar: 'الدخول والخروج', en: 'Admission & discharge' } },
+    { r: 'visitors-records', l: { he: 'מסמכים רפואיים', ar: 'الوثائق الطبية', en: 'Medical records' } },
+    { r: 'visitors-rights', l: { he: 'זכויות המטופל', ar: 'حقوق المريض', en: 'Patient rights' } },
+    { r: 'visitors-campus', l: { he: 'שירותים במתחם', ar: 'خدمات في الحرم', en: 'On-site services' } }
+  ] },
+  { id: 'emergency', l: { he: 'מיון וחירום', ar: 'الطوارئ', en: 'Emergency' }, items: [
+    { r: 'emergency-adults', l: { he: 'מיון מבוגרים', ar: 'طوارئ البالغين', en: 'Adult ER' } },
+    { r: 'emergency-kids', l: { he: 'מיון ילדים', ar: 'طوارئ الأطفال', en: 'Children’s ER' } },
+    { r: 'emergency-maternity', l: { he: 'מיון יולדות', ar: 'طوارئ الولادة', en: 'Maternity ER' } },
+    { r: 'emergency-bring', l: { he: 'מה להביא', ar: 'ماذا تحضرون', en: 'What to bring' } }
+  ] },
+  { id: 'about', l: { he: 'אודות', ar: 'عن المستشفى', en: 'About' }, items: [
+    { r: 'about-history', l: { he: 'ההיסטוריה שלנו', ar: 'تاريخنا', en: 'Our history' } },
+    { r: 'about-values', l: { he: 'ערכים וקהילה', ar: 'القيم والمجتمع', en: 'Values & community' } },
+    { r: 'about-management', l: { he: 'הנהלה', ar: 'الإدارة', en: 'Management' } },
+    { r: 'about-quality', l: { he: 'איכות ובטיחות', ar: 'الجودة والأمان', en: 'Quality & safety' } }
+  ] },
+  { id: 'news', l: { he: 'חדשות ואירועים', ar: 'أخبار وفعاليات', en: 'News & events' }, items: [
+    { r: 'news-updates', l: { he: 'עדכונים', ar: 'مستجدات', en: 'Updates' } },
+    { r: 'news-events', l: { he: 'אירועים והרצאות', ar: 'فعاليات ومحاضرات', en: 'Events & talks' } }
+  ] },
+  { id: 'careers', l: { he: 'קריירה', ar: 'وظائف', en: 'Careers' }, items: [
+    { r: 'careers-jobs', l: { he: 'משרות פתוחות', ar: 'وظائف شاغرة', en: 'Open positions' } },
+    { r: 'careers-students', l: { he: 'סטודנטים והתמחות', ar: 'طلاب وتخصص', en: 'Students & residency' } },
+    { r: 'careers-volunteer', l: { he: 'התנדבות', ar: 'تطوع', en: 'Volunteering' } }
+  ] },
+  { id: 'donate', l: { he: 'תרומות', ar: 'تبرعات', en: 'Donate' }, items: [
+    { r: 'donate-give', l: { he: 'תרומה מקוונת', ar: 'تبرع عبر الإنترنت', en: 'Give online' } },
+    { r: 'donate-projects', l: { he: 'פרויקטים שצריכים אתכם', ar: 'مشاريع بحاجة لكم', en: 'Projects to support' } },
+    { r: 'donate-friends', l: { he: 'ידידי בית החולים', ar: 'أصدقاء المستشفى', en: 'Friends of the hospital' } }
+  ] },
+  { id: 'contact', l: { he: 'צור קשר', ar: 'اتصل بنا', en: 'Contact' }, items: [
+    { r: 'contact-phones', l: { he: 'טלפונים חשובים', ar: 'هواتف مهمة', en: 'Key numbers' } },
+    { r: 'contact-form', l: { he: 'פנייה מקוונת', ar: 'توجه عبر الإنترنت', en: 'Online enquiry' } },
+    { r: 'contact-feedback', l: { he: 'פניות הציבור', ar: 'شكاوى الجمهور', en: 'Patient feedback' } }
+  ] }
+];
+
+/* Departments. type: inpatient | clinics | institutes. head = doctor id. Detailed text in Hebrew; names and short lines in 3 languages. */
+const DEPTS = [
+  { id: 'emergency-dept', type: 'inpatient', ic: 'pulse', name: { he: 'רפואה דחופה (מיון)', ar: 'الطب الطارئ (الطوارئ)', en: 'Emergency medicine' }, short: { he: 'מיון מבוגרים וילדים, פתוח כל השנה, 24 שעות ביממה.', ar: 'طوارئ للبالغين والأطفال، مفتوحة طوال السنة على مدار الساعة.', en: 'Adult and children’s ER, open around the clock, all year.' }, where: 'קומת כניסה, בניין ראשי', head: 'd1',
+    about: 'המיון הוא שער הכניסה של בית החולים לאלפי מטופלים מנצרת והגליל בכל חודש. צוות של רופאים ואחיות ברפואה דחופה מקבל אתכם במיון ראשוני תוך דקות, ומפנה כל מקרה למסלול המתאים: מהיר, פנימי, כירורגי או ילדים.',
+    services: ['מיון ראשוני (טריאז׳) תוך דקות מההגעה', 'מסלול מהיר לפציעות קלות', 'חדר הלם וטראומה', 'מיון ילדים נפרד ומותאם', 'קשר ישיר לחדרי צנתור וניתוח'] },
+  { id: 'internal', type: 'inpatient', ic: 'steth', name: { he: 'פנימית', ar: 'الأمراض الباطنية', en: 'Internal medicine' }, short: { he: 'אבחון וטיפול במחלות מורכבות ובמטופלים מבוגרים.', ar: 'تشخيص وعلاج الأمراض المركّبة والمرضى المسنين.', en: 'Diagnosis and care of complex conditions and older patients.' }, where: 'קומה 2, בניין ראשי', head: 'd2',
+    about: 'המחלקה הפנימית מטפלת במטופלים עם מחלות זיהומיות, מחלות כרוניות ומצבים שדורשים בירור רחב. הצוות עובד בצמוד לרופאי המשפחה בקהילה, כדי שההמשך בבית יהיה ברור ובטוח.',
+    services: ['אשפוז פנימי ובירור מהיר', 'טיפול בזיהומים ובמחלות כרוניות', 'רפואה גריאטרית', 'תכנית שחרור מותאמת אישית', 'הדרכת משפחות ומטפלים'] },
+  { id: 'cardiology', type: 'inpatient', ic: 'heart', name: { he: 'קרדיולוגיה וטיפול נמרץ לב', ar: 'أمراض القلب والعناية المكثفة', en: 'Cardiology & cardiac ICU' }, short: { he: 'צנתורים, ניטור לב וטיפול נמרץ לב מסביב לשעון.', ar: 'قسطرة ومراقبة قلب وعناية مكثفة على مدار الساعة.', en: 'Catheterisation, monitoring and cardiac intensive care around the clock.' }, where: 'קומה 3, אגף מזרחי', head: 'd3',
+    about: 'מחלקת הלב מספקת טיפול מלא, מהאבחון ועד השיקום: יחידת טיפול נמרץ לב, מכון צנתורים, מרפאת אי־ספיקת לב ומרפאת קוצבים. מטופלים בהתקף לב מגיעים ממיון ישירות לחדר הצנתורים.',
+    services: ['טיפול נמרץ לב', 'צנתור אבחוני וטיפולי', 'אקו לב ומבחני מאמץ', 'מרפאת אי־ספיקת לב', 'שיקום לב'] },
+  { id: 'surgery', type: 'inpatient', ic: 'scalpel', name: { he: 'כירורגיה כללית', ar: 'الجراحة العامة', en: 'General surgery' }, short: { he: 'ניתוחים זעיר־פולשניים ודחופים, עם החלמה מהירה.', ar: 'عمليات طفيفة التوغل وطارئة، مع تعافٍ سريع.', en: 'Minimally invasive and emergency surgery with faster recovery.' }, where: 'קומה 4, בניין ראשי', head: 'd4',
+    about: 'צוות המחלקה מבצע ניתוחי בטן, ניתוחי שד, ניתוחי בקע וניתוחים דחופים. רוב הניתוחים מתבצעים בשיטה לפרוסקופית, עם פחות כאב ושחרור מוקדם יותר הביתה.',
+    services: ['ניתוחים לפרוסקופיים', 'כירורגיית שד', 'ניתוחי כיס מרה ובקע', 'כירורגיה דחופה', 'מרפאת מעקב לאחר ניתוח'] },
+  { id: 'orthopedics', type: 'inpatient', ic: 'bone', name: { he: 'אורתופדיה', ar: 'جراحة العظام', en: 'Orthopaedics' }, short: { he: 'שברים, החלפת מפרקים ורפואת ספורט.', ar: 'كسور واستبدال مفاصل وطب رياضي.', en: 'Fractures, joint replacement and sports medicine.' }, where: 'קומה 4, אגף מערבי', head: 'd5',
+    about: 'המחלקה האורתופדית מטפלת בשברים ובפציעות, ומבצעת ניתוחי החלפת ברך וירך. פיזיותרפיה מתחילה כבר ביום שאחרי הניתוח, כדי לחזור לתנועה מהר ככל האפשר.',
+    services: ['טיפול בשברים ובטראומה', 'החלפת מפרק ברך וירך', 'ארתרוסקופיה', 'רפואת ספורט', 'שיקום ופיזיותרפיה'] },
+  { id: 'maternity', type: 'inpatient', ic: 'baby', name: { he: 'נשים ויולדות', ar: 'النساء والولادة', en: 'Women & maternity' }, short: { he: 'חדרי לידה, מחלקת יולדות והריון בסיכון.', ar: 'غرف ولادة وقسم نفاس وحمل عالي الخطورة.', en: 'Delivery rooms, maternity ward and high-risk pregnancy.' }, where: 'קומה 1, אגף הנשים', head: 'd6',
+    about: 'בחדרי הלידה שלנו נולדים בכל שנה אלפי תינוקות מנצרת והסביבה. מיילדות מנוסות מלוות אתכן לאורך הלידה, עם אפשרות ללידה טבעית, אלחוש אפידורלי ומחלקת יולדות עם ביות מלא.',
+    services: ['חדרי לידה וליווי מיילדת', 'מעקב הריון בסיכון', 'אולטרסאונד נשים', 'ייעוץ הנקה', 'סיור מקוון בחדרי הלידה'] },
+  { id: 'pediatrics', type: 'inpatient', ic: 'child', name: { he: 'ילדים', ar: 'طب الأطفال', en: 'Paediatrics' }, short: { he: 'אשפוז ילדים במחלקה צבעונית, עם הורה לצד המיטה.', ar: 'مبيت للأطفال في قسم ملوّن، مع أحد الوالدين بجانب السرير.', en: 'A friendly children’s ward with a parent by the bed.' }, where: 'קומה 2, אגף מזרחי', head: 'd7',
+    about: 'המחלקה מאשפזת ילדים מגיל לידה ועד 18. הורה יכול ללון לצד הילד בכל לילה, ובמחלקה פועלים גננת, ליצנית רפואית ופינת משחק.',
+    services: ['אשפוז ילדים', 'מרפאות ילדים מקצועיות', 'ליצנות רפואית', 'הדרכת הורים', 'מעקב לאחר שחרור'] },
+  { id: 'neonatal', type: 'inpatient', ic: 'heartHand', name: { he: 'פגים ויילודים', ar: 'الخدج وحديثو الولادة', en: 'Neonatal care' }, short: { he: 'טיפול נמרץ בפגים, עם שעות ביקור פתוחות להורים.', ar: 'عناية مكثفة للخدج مع زيارة مفتوحة للأهل.', en: 'Neonatal intensive care with open hours for parents.' }, where: 'קומה 1, אגף הנשים', head: 'd8',
+    about: 'הפגייה מטפלת בפגים ובתינוקות שזקוקים לניטור צמוד. ההורים הם חלק מהצוות: הם מוזמנים בכל שעה, לומדים לטפל בתינוק ומלווים עד השחרור הביתה.',
+    services: ['טיפול נמרץ פגים', 'שיטת קנגורו', 'ליווי הנקה', 'מעקב התפתחותי', 'תמיכה רגשית להורים'] },
+  { id: 'eyes', type: 'clinics', ic: 'eye', name: { he: 'מרפאת עיניים', ar: 'عيادة العيون', en: 'Eye clinic' }, short: { he: 'בדיקות ראייה, קטרקט ורשתית.', ar: 'فحوصات نظر، الماء الأبيض والشبكية.', en: 'Eye exams, cataract and retina.' }, where: 'מרפאות חוץ, קומה 0', head: 'd9',
+    about: 'מרפאת העיניים מבצעת בדיקות מקיפות, מעקב סוכרת בעין וניתוחי קטרקט באשפוז יום. רוב הבדיקות מסתיימות באותו ביקור.',
+    services: ['בדיקת עיניים מקיפה', 'ניתוחי קטרקט', 'מעקב רשתית וסוכרת', 'גלאוקומה', 'עיניים לילדים'] },
+  { id: 'ent', type: 'clinics', ic: 'ear', name: { he: 'אף אוזן גרון', ar: 'الأنف والأذن والحنجرة', en: 'ENT clinic' }, short: { he: 'שמיעה, סינוסים, שקדים וקול.', ar: 'السمع والجيوب الأنفية واللوزتين والصوت.', en: 'Hearing, sinuses, tonsils and voice.' }, where: 'מרפאות חוץ, קומה 0', head: 'd10',
+    about: 'המרפאה מטפלת במבוגרים ובילדים, עם בדיקות שמיעה במקום ומעקב לאחר ניתוחי שקדים ונחיריים.',
+    services: ['בדיקות שמיעה', 'ניתוחי שקדים', 'טיפול בסינוסים', 'הפרעות קול ובליעה', 'אף אוזן גרון ילדים'] },
+  { id: 'diabetes', type: 'clinics', ic: 'drop', name: { he: 'מרפאת סוכרת', ar: 'عيادة السكري', en: 'Diabetes clinic' }, short: { he: 'ליווי רופא, אחות ודיאטנית באותו ביקור.', ar: 'مرافقة طبيب وممرضة وأخصائية تغذية في نفس الزيارة.', en: 'Doctor, nurse and dietitian in one visit.' }, where: 'מרפאות חוץ, קומה 1', head: 'd2',
+    about: 'מרפאה רב־מקצועית למבוגרים ולילדים עם סוכרת. בביקור אחד פוגשים רופא, אחות ודיאטנית, ומקבלים תכנית ברורה בשפה שלכם.',
+    services: ['מעקב סוכרת מבוגרים', 'סוכרת ילדים ונוער', 'סוכרת הריון', 'הדרכה תזונתית', 'משאבות וחיישנים'] },
+  { id: 'imaging', type: 'institutes', ic: 'scan', name: { he: 'דימות', ar: 'التصوير الطبي', en: 'Imaging' }, short: { he: 'CT, MRI, אולטרסאונד ורנטגן, עם תשובה מהירה.', ar: 'تصوير مقطعي ورنين مغناطيسي وألتراساوند وأشعة.', en: 'CT, MRI, ultrasound and X-ray with fast results.' }, where: 'קומת מרתף, בניין ראשי', head: 'd11',
+    about: 'מכון הדימות פועל מסביב לשעון עבור המיון, ובשעות היום עבור מטופלי חוץ עם הפניה. התשובה עוברת ישירות לרופא המפנה.',
+    services: ['רנטגן', 'CT', 'MRI', 'אולטרסאונד', 'ממוגרפיה'] },
+  { id: 'dialysis', type: 'institutes', ic: 'flask', name: { he: 'יחידת דיאליזה', ar: 'وحدة غسيل الكلى', en: 'Dialysis unit' }, short: { he: 'טיפולי דיאליזה בשלוש משמרות ביום.', ar: 'جلسات غسيل كلى في ثلاث نوبات يومياً.', en: 'Dialysis in three shifts a day.' }, where: 'קומה 1, אגף מערבי', head: 'd12',
+    about: 'היחידה מעניקה טיפולי המודיאליזה למטופלים כרוניים מהאזור, בסביבה שקטה ונוחה, עם אחות קבועה לכל מטופל.',
+    services: ['המודיאליזה', 'הדרכה לדיאליזה ביתית', 'מרפאת כליות', 'ליווי תזונתי', 'הסעות בתיאום'] },
+  { id: 'lab', type: 'institutes', ic: 'flask', name: { he: 'מעבדות', ar: 'المختبرات', en: 'Laboratories' }, short: { he: 'בדיקות דם ותרביות, תוצאות באתר.', ar: 'فحوصات دم ومزارع، والنتائج عبر الموقع.', en: 'Blood tests and cultures, results online.' }, where: 'קומה 0, בניין ראשי', head: 'd11',
+    about: 'המעבדות המרכזיות מבצעות בדיקות לכל מחלקות בית החולים ולמטופלי חוץ. תוצאות מוכנות זמינות באזור האישי.',
+    services: ['המטולוגיה וביוכימיה', 'מיקרוביולוגיה', 'בנק דם', 'בדיקות הריון', 'תוצאות באזור האישי'] }
+];
+
+/* Doctors: sample (fictional) names. */
+const DOCS = [
+  { id: 'd1', dept: 'emergency-dept', role: 'head', name: { he: 'ד״ר סמיר חדאד', ar: 'د. سمير حداد', en: 'Dr. Samir Haddad' }, langs: ['he','ar','en'], days: 'מיון: משמרות', focus: 'רפואה דחופה, טראומה' },
+  { id: 'd2', dept: 'internal', role: 'head', name: { he: 'ד״ר רנא ח׳ורי', ar: 'د. رنا خوري', en: 'Dr. Rana Khoury' }, langs: ['he','ar','en'], days: 'מרפאה: ב׳, ד׳', focus: 'רפואה פנימית, סוכרת' },
+  { id: 'd3', dept: 'cardiology', role: 'head', name: { he: 'פרופ׳ אליאס נסאר', ar: 'بروفيسور إلياس نصار', en: 'Prof. Elias Nassar' }, langs: ['he','ar','en'], days: 'מרפאה: א׳, ג׳', focus: 'צנתורים, אי־ספיקת לב' },
+  { id: 'd4', dept: 'surgery', role: 'head', name: { he: 'ד״ר יוסף שחאדה', ar: 'د. يوسف شحادة', en: 'Dr. Yousef Shehadeh' }, langs: ['he','ar'], days: 'מרפאה: ב׳', focus: 'כירורגיה לפרוסקופית' },
+  { id: 'd5', dept: 'orthopedics', role: 'head', name: { he: 'ד״ר מיכאל לוין', ar: 'د. ميخائيل ليفين', en: 'Dr. Michael Levin' }, langs: ['he','en','ru'], days: 'מרפאה: ג׳, ה׳', focus: 'החלפת מפרקים' },
+  { id: 'd6', dept: 'maternity', role: 'head', name: { he: 'ד״ר לינה בשארה', ar: 'د. لينا بشارة', en: 'Dr. Lina Bishara' }, langs: ['he','ar','en'], days: 'מרפאה: א׳, ד׳', focus: 'הריון בסיכון' },
+  { id: 'd7', dept: 'pediatrics', role: 'head', name: { he: 'ד״ר נדים עזאם', ar: 'د. نديم عزام', en: 'Dr. Nadim Azzam' }, langs: ['he','ar'], days: 'מרפאה: ב׳, ה׳', focus: 'רפואת ילדים, אסתמה' },
+  { id: 'd8', dept: 'neonatal', role: 'head', name: { he: 'ד״ר מאיה אבו־אחמד', ar: 'د. مايا أبو أحمد', en: 'Dr. Maya Abu-Ahmad' }, langs: ['he','ar','en'], days: 'פגייה', focus: 'נאונטולוגיה' },
+  { id: 'd9', dept: 'eyes', role: 'senior', name: { he: 'ד״ר ג׳ורג׳ סלים', ar: 'د. جورج سليم', en: 'Dr. George Salim' }, langs: ['he','ar','en'], days: 'מרפאה: א׳–ה׳', focus: 'קטרקט ורשתית' },
+  { id: 'd10', dept: 'ent', role: 'senior', name: { he: 'ד״ר נור עודה', ar: 'د. نور عودة', en: 'Dr. Nour Odeh' }, langs: ['he','ar'], days: 'מרפאה: ג׳', focus: 'אף אוזן גרון ילדים' },
+  { id: 'd11', dept: 'imaging', role: 'head', name: { he: 'ד״ר הדס כרמי', ar: 'د. هداس كرمي', en: 'Dr. Hadas Carmi' }, langs: ['he','en'], days: 'מכון: א׳–ו׳', focus: 'דימות גוף, MRI' },
+  { id: 'd12', dept: 'dialysis', role: 'head', name: { he: 'ד״ר עומר זועבי', ar: 'د. عمر زعبي', en: 'Dr. Omar Zoabi' }, langs: ['he','ar','en'], days: 'מרפאה: ד׳', focus: 'נפרולוגיה' },
+  { id: 'd13', dept: 'cardiology', role: 'specialist', name: { he: 'ד״ר סוהא מרקוס', ar: 'د. سهى مرقص', en: 'Dr. Suha Markus' }, langs: ['he','ar'], days: 'מרפאה: ב׳, ה׳', focus: 'אקו לב' },
+  { id: 'd14', dept: 'maternity', role: 'specialist', name: { he: 'ד״ר אנה פרידמן', ar: 'د. آنا فريدمان', en: 'Dr. Anna Friedman' }, langs: ['he','ru','en'], days: 'מרפאה: ג׳', focus: 'אולטרסאונד נשים' },
+  { id: 'd15', dept: 'internal', role: 'specialist', name: { he: 'ד״ר באסל טנוס', ar: 'د. باسل طنوس', en: 'Dr. Basel Tannous' }, langs: ['he','ar','en'], days: 'מרפאה: א׳', focus: 'מחלות זיהומיות' },
+  { id: 'd16', dept: 'orthopedics', role: 'specialist', name: { he: 'ד״ר ראמי חביב', ar: 'د. رامي حبيب', en: 'Dr. Rami Habib' }, langs: ['he','ar'], days: 'מרפאה: ד׳', focus: 'רפואת ספורט' }
+];
+
+const NEWS = [
+  { id: 'n1', date: '2026-11-02', cat: { he: 'עדכון', ar: 'مستجد', en: 'Update' }, t: { he: 'נפתח חדר צנתורים שני: פחות המתנה למטופלי לב מהגליל', ar: 'افتتاح غرفة قسطرة ثانية: انتظار أقل لمرضى القلب من الجليل', en: 'A second cath lab opens: shorter waits for Galilee heart patients' }, x: 'חדר הצנתורים החדש פועל מסביב לשעון ומאפשר לקבל שני מטופלים בהתקף לב בו־זמנית.' },
+  { id: 'n2', date: '2026-10-21', cat: { he: 'קהילה', ar: 'مجتمع', en: 'Community' }, t: { he: 'יום בריאות פתוח בשוק העירוני: בדיקות לחץ דם וסוכר חינם', ar: 'يوم صحة مفتوح في السوق البلدي: فحص ضغط وسكر مجاناً', en: 'Open health day at the city market: free blood pressure and sugar checks' }, x: 'אחיות ורופאים מבית החולים יצאו לשוק העירוני ובדקו מאות תושבים במהלך יום אחד.' },
+  { id: 'n3', date: '2026-10-08', cat: { he: 'אירוע', ar: 'فعالية', en: 'Event' }, t: { he: 'הרצאה להורים: איך מכינים ילד לאשפוז', ar: 'محاضرة للأهل: كيف نحضّر الطفل للمبيت في المستشفى', en: 'Talk for parents: preparing a child for a hospital stay' }, x: 'מנהל מחלקת הילדים ופסיכולוגית המחלקה ייתנו כלים מעשיים להורים. ההרצאה בערבית ובעברית.' },
+  { id: 'n4', date: '2026-09-15', cat: { he: 'עדכון', ar: 'مستجد', en: 'Update' }, t: { he: 'תוצאות בדיקות זמינות עכשיו באזור האישי, בשלוש שפות', ar: 'نتائج الفحوصات متاحة الآن في المنطقة الشخصية بثلاث لغات', en: 'Test results now available in your personal area, in three languages' }, x: 'אפשר לצפות בתוצאות מעבדה ודימות, להוריד מכתבי שחרור ולשתף אותם עם רופא המשפחה.' },
+  { id: 'n5', date: '2026-09-01', cat: { he: 'קהילה', ar: 'مجتمع', en: 'Community' }, t: { he: '165 שנה בנצרת: ערב מורשת לצוות ולקהילה', ar: '165 عاماً في الناصرة: أمسية تراث للطاقم والمجتمع', en: '165 years in Nazareth: a heritage evening for staff and community' }, x: 'ערב של סיפורים, צילומים מהארכיון ומפגש בין דורות של אנשי צוות ומטופלים.' }
+];
+
+const JOBS = [
+  { t: 'אח/ות מוסמך/ת, מחלקה פנימית', k: 'סיעוד · משרה מלאה · משמרות' },
+  { t: 'רופא/ה מתמחה ברפואה דחופה', k: 'רפואה · התמחות' },
+  { t: 'טכנאי/ת רנטגן ו־CT', k: 'מקצועות בריאות · משמרות' },
+  { t: 'מיילד/ת', k: 'סיעוד · חדרי לידה' },
+  { t: 'רכז/ת שירות מטופלים, דוברי ערבית ועברית', k: 'מנהלה · משרה מלאה' }
+];
+
+const VISIT_HOURS = [
+  ['מחלקות אשפוז', '11:00–13:00', '16:00–20:30'],
+  ['טיפול נמרץ לב', '12:00–13:00', '18:00–19:30'],
+  ['ילדים', 'הורה: כל היום', 'מבקרים: 16:00–20:00'],
+  ['יולדות', '15:00–17:00', '19:00–20:30'],
+  ['פגייה', 'הורים: כל שעה', 'סבים: 17:00–18:00']
+];
+
+/* ===== Core engine: i18n, router, shared partials and shared pages ===== */
+const LANGS = { he: { dir: 'rtl', short: 'עב', label: 'עברית' }, ar: { dir: 'rtl', short: 'عر', label: 'العربية' }, en: { dir: 'ltr', short: 'EN', label: 'English' } };
+const S = { lang: 'he', q: '', dq: '', ddept: '', dlang: '', deptq: '', menu: false, appt: { step: 1, dept: '', doc: '', day: '', time: '' }, sent: {} };
+const VIEW = window.VIEW || {};
+
+const ICONS = {
+  search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+  menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
+  x: '<path d="M18 6 6 18M6 6l12 12"/>',
+  fwd: '<path d="m9 6 6 6-6 6"/>',
+  down: '<path d="m6 9 6 6 6-6"/>',
+  phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  pin: '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+  cal: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  users: '<circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14a5 5 0 0 1 6 5"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+  pulse: '<path d="M3 12h4l2-5 4 10 2-5h6"/>',
+  steth: '<path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/>',
+  heart: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+  scalpel: '<path d="M14 4 4 14l3 3L20 7z"/><path d="m4 14-1 6 4-3"/>',
+  bone: '<path d="M8 16 16 8"/><circle cx="6.5" cy="15.5" r="2"/><circle cx="8.5" cy="17.5" r="2"/><circle cx="15.5" cy="6.5" r="2"/><circle cx="17.5" cy="8.5" r="2"/>',
+  baby: '<circle cx="12" cy="7" r="3.5"/><path d="M6 21v-3a6 6 0 0 1 12 0v3"/>',
+  child: '<circle cx="12" cy="5" r="2.5"/><path d="M12 8v7M8 11h8M9 21l3-6 3 6"/>',
+  heartHand: '<path d="M12 11s-4-2.5-4-5.2A2.3 2.3 0 0 1 12 4.5a2.3 2.3 0 0 1 4 1.3C16 8.5 12 11 12 11z"/><path d="M3 15h4l3 2h4a1.5 1.5 0 0 1 0 3H9"/><path d="m14 17 5-2a1.5 1.5 0 0 1 1.5 2.5L15 21H3"/>',
+  eye: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  ear: '<path d="M6 9a6 6 0 0 1 12 0c0 3-2 4-3 5.5S14 18 12 20a3 3 0 0 1-4-1"/><path d="M9 9a3 3 0 0 1 6 0"/>',
+  drop: '<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>',
+  scan: '<path d="M3 7V4h3M18 4h3v3M21 17v3h-3M6 20H3v-3"/><circle cx="12" cy="12" r="4"/>',
+  flask: '<path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/>',
+  car: '<path d="M5 16v-5l2-5h10l2 5v5"/><path d="M3 16h18v3H3z"/>',
+  bus: '<rect x="5" y="3" width="14" height="15" rx="2"/><path d="M5 11h14M8 21v-3M16 21v-3"/>',
+  alert: '<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+  brief: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/>',
+  news: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/>',
+  doc: '<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h6"/>',
+  shield: '<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>',
+  check: '<path d="m5 12 5 5 9-10"/>',
+  coffee: '<path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h2a2 2 0 0 1 0 4h-2M8 3v2M12 3v2"/>',
+  video: '<rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/>',
+  camera: '<path d="M4 7h3l2-3h6l2 3h3v13H4z"/><circle cx="12" cy="13" r="3.5"/>',
+  lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  chat: '<path d="M4 5h16v11H9l-5 4z"/>',
+  wheel: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 3v7M12 14v7M3 12h7M14 12h7"/>'
+};
+const DEPT_GROUPS = ['inpatient', 'clinics', 'institutes'];
+const APPT_DEPTS = () => DEPTS.filter(d => !['emergency-dept', 'neonatal'].includes(d.id));
+const PAGES = ['home', 'departments', 'doctors', 'appointment', 'visitors', 'emergency', 'about', 'news', 'careers', 'donate', 'contact', 'search'];
+const GROUP_OF = { dept: 'departments', doctor: 'doctors' };
+
+/* helpers */
+const L = o => o == null ? '' : (typeof o === 'string' || Array.isArray(o)) ? o : (o[S.lang] ?? o.he);
+const t = k => UI[k] ? L(UI[k]) : k;
+const ic = (n, c = '') => `<svg class="ic ${c}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
+const num = n => `<bdi dir="ltr" class="num">${n}</bdi>`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const navL = id => L((NAV.find(n => n.id === id) || {}).l);
+const dept = id => DEPTS.find(d => d.id === id);
+const doc = id => DOCS.find(d => d.id === id);
+const docsOf = id => { const h = (dept(id) || {}).head; return DOCS.filter(x => x.dept === id || x.id === h).sort((a, b) => (a.id === h ? -1 : b.id === h ? 1 : 0)); };
+const initials = d => d.name.he.replace(/^(ד״ר|פרופ׳)\s*/, '').split(/[\s־-]+/).map(w => w[0]).slice(0, 2).join('');
+const hash = s => { let h = 7; for (const c of s) h = (h * 31 + c.charCodeAt(0)) | 0; return Math.abs(h); };
+const fmtDate = iso => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${UI.months[S.lang][m - 1]} ${y}`; };
+const heOnly = html => S.lang === 'he' ? html : `<div class="he-only" lang="he" dir="rtl">${html}</div>`;
+const trNote = () => S.lang === 'he' ? '' : `<p class="tr-note">${ic('globe')}<span>${t('trNote')}</span></p>`;
+const avatar = (d, c = '') => `<span class="avatar ${c}" aria-hidden="true">${initials(d)}</span>`;
+const roleL = d => t(d.role);
+const langsL = d => d.langs.map(l => t('lang_' + l)).join(' · ');
+
+function langSwitch(c = '') {
+  return `<div class="langs ${c}" role="group" aria-label="Language">${Object.keys(LANGS).map(k => `<button type="button" data-act="lang" data-v="${k}" lang="${k}" aria-pressed="${S.lang === k}" title="${LANGS[k].label}">${LANGS[k].short}</button>`).join('')}</div>`;
+}
+function isDark() { const d = document.documentElement.dataset.theme; return d ? d === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches; }
+function themeBtn(c = '') { return `<button type="button" class="icon-btn ${c}" data-act="theme" aria-label="${t('theme')}" title="${t('theme')}">${ic(isDark() ? 'sun' : 'moon')}</button>`; }
+function searchForm(c = '', id = 'q-top', big = false) {
+  return `<form class="search ${c}" data-form="search" role="search"><label class="vh" for="${id}">${t('search')}</label><input id="${id}" name="q" type="search" autocomplete="off" placeholder="${t('searchPh')}" value="${esc(S.q)}"><button type="submit" aria-label="${t('search')}">${ic('search')}${big ? `<span>${t('search')}</span>` : ''}</button></form>`;
+}
+function sketchBar() { return `<div class="sketch-bar" role="note"><b>${t('sketchShort')}</b> ${t('sketch')}</div>`; }
+function megaNav(c = '', ids) {
+  return `<nav class="mega ${c}" aria-label="${t('menu')}"><ul>${NAV.filter(n => !ids || ids.includes(n.id)).map(n => `<li data-g="${n.id}"><a class="top" href="#${n.id}">${L(n.l)}${ic('down', 'dn')}</a><div class="panel"><ul>${n.items.map(i => `<li><a href="#${i.r}">${L(i.l)}</a></li>`).join('')}</ul></div></li>`).join('')}</ul></nav>`;
+}
+function drawer() {
+  return `<div class="drawer" ${S.menu ? '' : 'hidden'}><div class="drawer-in" role="dialog" aria-modal="true" aria-label="${t('menu')}">
+  <div class="drawer-top"><b>${L(HOSP.name)}</b><button type="button" class="icon-btn" data-act="menu" aria-label="${t('close')}">${ic('x')}</button></div>
+  ${searchForm('drawer-search', 'q-drawer')}
+  <div class="drawer-er"><span>${ic('pulse')} ${t('erOpen')}</span><span>${t('mda')} ${num('101')}</span></div>
+  <ul class="acc">${NAV.map(n => `<li><details><summary>${L(n.l)}${ic('down', 'dn')}</summary><ul>${n.items.map(i => `<li><a href="#${i.r}">${L(i.l)}</a></li>`).join('')}</ul></details></li>`).join('')}</ul>
+  <div class="drawer-foot">${langSwitch()}${themeBtn()}</div></div></div>`;
+}
+function footerCols(ids = ['departments', 'visitors', 'emergency', 'about', 'careers']) {
+  return ids.map(id => { const n = NAV.find(x => x.id === id); return `<div class="fcol"><h3>${L(n.l)}</h3><ul>${n.items.map(i => `<li><a href="#${i.r}">${L(i.l)}</a></li>`).join('')}</ul></div>`; }).join('');
+}
+function phonesList() {
+  return `<ul class="phones">
+  <li><span>${t('switchboard')}</span>${num(HOSP.phone)}</li>
+  <li><span>${t('erLine')}</span>${num(HOSP.er)}</li>
+  <li><span>${t('apptLine')}</span>${num(HOSP.appt)}</li>
+  <li><span>${t('mda')}</span>${num('101')}</li></ul>`;
+}
+function footerBase() {
+  return `<div class="fbase"><span>${t('rights')}</span><span class="flinks"><a href="#about-quality">${t('access')}</a><a href="#about-quality">${t('privacy')}</a></span></div>`;
+}
+function pageHead(title, lead = '', crumbs = []) {
+  if (VIEW.phead) return VIEW.phead(title, lead, crumbs);
+  return `<header class="phead"><div class="wrap"><nav class="crumbs" aria-label="breadcrumbs"><a href="#home">${t('home')}</a>${crumbs.map(c => `${ic('fwd', 'sep')}<a href="#${c[0]}">${c[1]}</a>`).join('')}</nav><h1>${title}</h1>${lead ? `<p class="lead">${lead}</p>` : ''}</div></header>`;
+}
+
+/* Placeholder art: flat inline SVG scenes, colored by theme tokens (--art-0..4). */
+function art(kind = 'hills', label = '', c = '') {
+  let g = '<rect class="a0" width="400" height="260"/>';
+  const fig = (x, s, k) => `<circle class="${k}" cx="${x}" cy="${260 - 128 * s}" r="${24 * s}"/><path class="${k}" d="M${x - 44 * s} 262V${262 - 58 * s}a${44 * s} ${44 * s} 0 0 1 ${88 * s} 0V262z"/>`;
+  if (kind === 'hills' || kind === 'building') {
+    g += '<circle class="a3" cx="318" cy="64" r="26"/><path class="a1" d="M0 178Q70 122 150 160T300 140T400 150V260H0z"/>';
+    g += '<rect class="a4" x="128" y="108" width="150" height="96"/><path class="a4" d="M150 108l53-30 53 30z"/>';
+    for (let i = 0; i < 5; i++) g += `<path class="a0" d="M${142 + i * 27} 196v-30a8 8 0 0 1 16 0v30z"/>`;
+    g += '<path class="a2" d="M0 222Q100 182 200 210T400 200V260H0z"/>';
+  } else if (kind === 'people') {
+    g += '<rect class="a1" x="250" y="30" width="110" height="140"/><rect class="a0" x="303" y="30" width="4" height="140"/>' + fig(118, 1, 'a2') + fig(214, 1.12, 'a4') + fig(300, .78, 'a3');
+  } else if (kind === 'care') {
+    g += '<rect class="a1" x="30" y="40" width="120" height="90"/>' + fig(170, 1.15, 'a4') + fig(262, .7, 'a3') + '<rect class="a2" x="0" y="230" width="400" height="30"/>';
+  } else if (kind === 'clinic') {
+    g += '<rect class="a1" x="40" y="150" width="320" height="16"/><rect class="a2" x="60" y="166" width="12" height="94"/><rect class="a2" x="328" y="166" width="12" height="94"/>' + fig(130, .95, 'a4') + '<rect class="a3" x="230" y="70" width="90" height="60"/><path class="a0" d="M246 100h14l6-14 8 28 6-14h24" style="fill:none;stroke-width:4" stroke="currentColor"/>';
+  }
+  return `<figure class="art ${c}"><svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${g}</svg>${label ? `<figcaption>${ic('camera')}<span>${t('photoSlot')}: ${L(label)}</span></figcaption>` : ''}</figure>`;
+}
+
+/* Appointment model */
+function apptDays(n = 12) { const out = []; const d = new Date(); d.setHours(0, 0, 0, 0); while (out.length < n) { d.setDate(d.getDate() + 1); if (d.getDay() !== 6) out.push(new Date(d)); } return out; }
+const dayKey = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const dayLbl = d => ({ dow: UI.days[S.lang][d.getDay()], dm: `${d.getDate()}.${d.getMonth() + 1}` });
+function slots(docId, key) {
+  const out = [];
+  const skip = hash(docId + key) % 7; let i = 0;
+  for (let m = 8 * 60; m <= 15 * 60 + 20; m += 20, i++) { const tm = `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`; out.push({ tm, free: i >= skip && (hash(tm + '|' + key + '|' + docId) >> 2) % 3 !== 0 }); }
+  return out;
+}
+function freeCount(docId, key) { return slots(docId, key).filter(s => s.free).length; }
+function firstFree(docId) { for (const d of apptDays()) { const k = dayKey(d); const s = slots(docId, k).find(x => x.free); if (s) return { d, k, tm: s.tm }; } return null; }
+function apptSet(k, v) {
+  const A = S.appt; A[k] = v;
+  if (k === 'dept') { A.doc = ''; A.day = ''; A.time = ''; A.step = 2; }
+  if (k === 'doc') { A.day = ''; A.time = ''; A.step = 3; }
+  if (k === 'day') { A.time = ''; }
+  if (k === 'time') { A.step = 4; }
+  renderMain(true);
+}
+function apptDocId() { const A = S.appt; return A.doc === 'any' ? (docsOf(A.dept)[0] || {}).id : A.doc; }
+function apptSummary() {
+  const A = S.appt, rows = [];
+  if (A.dept) rows.push([t('pickDept'), L(dept(A.dept).name)]);
+  if (A.doc) rows.push([t('pickDoctor'), A.doc === 'any' ? t('anyDoctor') : L(doc(A.doc).name)]);
+  if (A.day) { const d = new Date(A.day + 'T00:00'); const l = dayLbl(d); rows.push([t('pickTime'), `${l.dow} ${num(l.dm)}${A.time ? ' · ' + num(A.time) : ''}`]); }
+  return rows;
+}
+function apptForm(c = '') {
+  return `<form class="appt-form ${c}" data-form="appt">
+  <div class="field"><label for="ap-name">${t('fullName')}</label><input id="ap-name" name="name" required autocomplete="name"></div>
+  <div class="field"><label for="ap-id">${t('idNum')}</label><input id="ap-id" name="id" inputmode="numeric" required></div>
+  <div class="field"><label for="ap-tel">${t('mobile')}</label><input id="ap-tel" name="tel" type="tel" dir="ltr" required></div>
+  <div class="field"><label for="ap-hmo">${t('hmo')}</label><select id="ap-hmo" name="hmo"><option>כללית</option><option>מכבי</option><option>מאוחדת</option><option>לאומית</option></select></div>
+  <p class="demo-note">${ic('lock')} ${t('demoNote')}</p>
+  <div class="row-btns"><button type="button" class="btn ghost" data-act="appt-step" data-v="3">${ic('fwd', 'bk')} ${t('back')}</button><button type="submit" class="btn primary">${t('bookIt')}</button></div></form>`;
+}
+function apptExtras() {
+  return `<section class="block extras" id="sec-manage">${heOnly(`<h2>שינוי או ביטול תור</h2><p>אפשר לשנות או לבטל תור עד 24 שעות לפני המועד: באזור האישי, בהודעת SMS שקיבלתם, או במוקד זימון התורים ${num(HOSP.appt)}. תור שמתבטל בזמן פנוי למטופל אחר שמחכה.</p>`)}</section>
+  <section class="block extras" id="sec-referrals">${heOnly(`<h2>הפניות והתחייבויות</h2><ul class="ticks"><li>${ic('check')} הפניה מרופא המשפחה או מרופא מומחה בקהילה</li><li>${ic('check')} התחייבות (טופס 17) מקופת החולים, למרפאות שדורשות אותה</li><li>${ic('check')} תעודת זהות ורשימת תרופות עדכנית</li><li>${ic('check')} סיכומי בדיקות קודמות, אם יש</li></ul><p>אפשר להעלות את ההפניה וההתחייבות מראש באזור האישי, ולחסוך המתנה בקבלה.</p>`)}</section>`;
+}
+function doctorsExtras() {
+  const heads = DOCS.filter(d => d.role === 'head');
+  return `<section class="block" id="sec-heads"><h2>${L(NAV[1].items[1].l)}</h2><ul class="heads">${heads.map(d => `<li><a href="#doctor-${d.id}">${avatar(d, 'sm')}<span><b>${L(d.name)}</b><small>${L(dept(d.dept).name)}</small></span></a></li>`).join('')}</ul></section>
+  <section class="block" id="sec-second">${heOnly(`<h2>חוות דעת שנייה</h2><p>מטופלים מכל הארץ יכולים לקבל חוות דעת שנייה מרופא בכיר בבית החולים, על סמך המסמכים והבדיקות שכבר נעשו. מעלים את המסמכים באזור האישי, ובתוך כמה ימי עבודה חוזרים אליכם לתיאום פגישה.</p>`)}</section>`;
+}
+
+/* Filters */
+function matchQ(q, ...vals) { q = q.trim().toLowerCase(); if (!q) return true; return vals.some(v => (typeof v === 'object' ? Object.values(v).join(' ') : String(v || '')).toLowerCase().includes(q)); }
+function filterDocs() { return DOCS.filter(d => (!S.ddept || d.dept === S.ddept || dept(S.ddept).head === d.id) && (!S.dlang || d.langs.includes(S.dlang)) && matchQ(S.dq, d.name, d.focus, dept(d.dept).name)); }
+function filterDepts() { return DEPTS.filter(d => matchQ(S.deptq, d.name, d.short, d.services.join(' '))); }
+function docFilters(c = '') {
+  return `<div class="doc-filters ${c}">
+  <div class="field grow"><label for="dq">${t('search')}</label><input id="dq" data-bind="dq" type="search" value="${esc(S.dq)}" placeholder="${t('searchPh')}"></div>
+  <div class="field"><label for="ddept">${t('pickDept')}</label><select id="ddept" data-bind="ddept"><option value="">${t('anyDept')}</option>${DEPTS.map(d => `<option value="${d.id}" ${S.ddept === d.id ? 'selected' : ''}>${L(d.name)}</option>`).join('')}</select></div>
+  <div class="field"><label for="dlang">${t('speaks')}</label><select id="dlang" data-bind="dlang"><option value="">${t('anyLang')}</option>${['he', 'ar', 'en', 'ru'].map(l => `<option value="${l}" ${S.dlang === l ? 'selected' : ''}>${t('lang_' + l)}</option>`).join('')}</select></div></div>`;
+}
+
+/* ===== Shared secondary pages (Hebrew content; title translated) ===== */
+const SHARED = {
+  doctor(r) {
+    const d = doc(r.id); if (!d) return SHARED.notFound();
+    const dp = dept(d.dept), ff = firstFree(d.id);
+    return pageHead(L(d.name), `${roleL(d)} · ${L(dp.name)}`, [['doctors', navL('doctors')], ['dept-' + dp.id, L(dp.name)]]) + `<div class="wrap page-body"><div class="doc-profile">
+    <aside class="doc-side">${avatar(d, 'xl')}<dl class="kv"><div><dt>${t('pickDept')}</dt><dd><a href="#dept-${dp.id}">${L(dp.name)}</a></dd></div><div><dt>${t('speaks')}</dt><dd>${langsL(d)}</dd></div><div><dt>${ic('clock')}</dt><dd lang="he">${d.days}</dd></div>${ff ? `<div><dt>${t('nearest')}</dt><dd>${dayLbl(ff.d).dow} ${num(dayLbl(ff.d).dm)} · ${num(ff.tm)}</dd></div>` : ''}</dl>
+    <button type="button" class="btn primary block" data-act="appt-doc" data-v="${d.id}">${ic('cal')} ${t('book')}</button><p class="muted small">${t('examples')}</p></aside>
+    <div class="doc-main">${trNote()}${heOnly(`<h2>על הרופא/ה</h2><p>${d.name.he}, ${UI[d.role].he} ב${dp.name.he}. תחומי ההתמחות: ${d.focus}. בבית החולים מאמינים שהמטופל צריך להבין את הטיפול שלו, ולכן כל הסבר ניתן בשפה שנוחה לו: ${d.langs.map(l => UI['lang_' + l].he).join(', ')}.</p>
+    <h2>תחומי עיסוק</h2><ul class="ticks">${d.focus.split(',').map(f => `<li>${ic('check')} ${f.trim()}</li>`).join('')}<li>${ic('check')} מעקב וליווי לאחר טיפול</li></ul>
+    <h2>השכלה וניסיון</h2><p>פרטי ההשכלה, הפרסומים והניסיון יופיעו כאן בגרסה הסופית, לפי החומר שיתקבל מבית החולים.</p>`)}</div></div></div>`;
+  },
+  visitors(r) {
+    return pageHead(navL('visitors'), S.lang === 'he' ? 'כל מה שצריך לדעת לפני שמגיעים: שעות ביקור, חניה, אשפוז, שחרור ומסמכים.' : '', []) + `<div class="wrap page-body">${trNote()}${heOnly(`
+    <section class="block" id="sec-hours"><h2>${ic('clock')} שעות ביקור</h2><p>ביקורים עוזרים להחלמה. כדי לשמור על מנוחת המטופלים, מבקשים להגיע בשעות האלה, עד שני מבקרים ליד כל מיטה.</p>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th>מחלקה</th><th>צהריים</th><th>ערב</th></tr></thead><tbody>${VISIT_HOURS.map(r => `<tr><td>${r[0]}</td><td>${r[1].replace(/(\d\d:\d\d–\d\d:\d\d)/, '<bdi dir="ltr">$1</bdi>')}</td><td>${r[2].replace(/(\d\d:\d\d–\d\d:\d\d)/, '<bdi dir="ltr">$1</bdi>')}</td></tr>`).join('')}</tbody></table></div></section>
+    <section class="block" id="sec-parking"><h2>${ic('car')} הגעה וחניה</h2><div class="cols3">
+      <div><h3>${ic('car')} ברכב</h3><p>חניון בית החולים פתוח 24 שעות, עם כ־400 מקומות (נתון לדוגמה). חניות נכים ליד הכניסה הראשית ולמיון. תשלום בעמדות או באפליקציה.</p></div>
+      <div><h3>${ic('bus')} בתחבורה ציבורית</h3><p>קווי אוטובוס עירוניים ובין־עירוניים עוצרים ליד שער בית החולים. בדקו את המסלול במוביט או בכל אפליקציית תחבורה.</p></div>
+      <div><h3>${ic('wheel')} נגישות</h3><p>כל הכניסות נגישות. כיסאות גלגלים זמינים ליד הקבלה, ואפשר להזמין ליווי מראש במוקד.</p></div></div></section>
+    <section class="block" id="sec-admission"><h2>${ic('doc')} אשפוז ושחרור</h2><p>ביום האשפוז מגיעים לקבלה המרכזית עם תעודת זהות, התחייבות מקופת החולים ורשימת תרופות. לפני השחרור תקבלו מכתב שחרור, מרשמים והסבר על ההמשך, בשפה שלכם.</p></section>
+    <section class="block" id="sec-records"><h2>${ic('doc')} מסמכים רפואיים</h2><p>מכתבי שחרור, תוצאות בדיקות ודימות זמינים באזור האישי. אפשר גם לבקש עותק במחלקת רשומות רפואיות, עם תעודת זהות וייפוי כוח כשצריך.</p></section>
+    <section class="block" id="sec-rights"><h2>${ic('shield')} זכויות המטופל</h2><ul class="ticks"><li>${ic('check')} לקבל הסבר מלא על המצב והטיפול, בשפה שאתם מבינים</li><li>${ic('check')} לשמירה על פרטיות וכבוד</li><li>${ic('check')} לבחור נציג או מלווה</li><li>${ic('check')} לפנות לנציבות פניות הציבור של בית החולים</li></ul></section>
+    <section class="block" id="sec-campus"><h2>${ic('coffee')} שירותים במתחם</h2><ul class="chips"><li>קפיטריה</li><li>בית תפילה</li><li>כספומט</li><li>חנות נוחות</li><li>עובדת סוציאלית</li><li>מתורגמנים</li></ul></section>`)}</div>`;
+  },
+  emergency(r) {
+    const card = (id, icn, h, p) => `<section class="block er-card" id="sec-${id}"><h2>${ic(icn)} ${h}</h2><p>${p}</p></section>`;
+    return pageHead(navL('emergency'), S.lang === 'he' ? 'המיון פתוח 24 שעות ביממה, כל ימות השנה. במצב מסכן חיים חייגו 101.' : t('erOpen'), []) + `<div class="wrap page-body">
+    <div class="er-alert">${ic('alert')}<div><b>${t('emergencyNow')}</b><span>${t('erLine')} ${num(HOSP.er)} · ${t('mda')} ${num('101')}</span></div></div>
+    <div class="er-wait"><span>${t('waitNow')}</span><b>${num('35')} ${t('minutes')}</b><small>${t('sample')}</small></div>${trNote()}${heOnly(`<div class="er-grid">
+    ${card('adults', 'pulse', 'מיון מבוגרים', 'כניסה מרחוב בית החולים, שער ב׳. בדיקת אחות ראשונית תוך דקות, ואחריה הפניה למסלול המתאים. מטופלים במצב קשה מקבלים עדיפות, לכן סדר הקבלה אינו לפי סדר ההגעה.')}
+    ${card('kids', 'child', 'מיון ילדים', 'מיון נפרד לילדים עד גיל 18, עם צוות רפואת ילדים ופינת המתנה שקטה. הורה אחד נשאר עם הילד לאורך כל הזמן.')}
+    ${card('maternity', 'baby', 'מיון יולדות', 'פתוח לנשים בהריון מעל שבוע 20, בכל שעה. כניסה ישירה דרך אגף הנשים, קומה 1. הביאו את כרטיס מעקב ההריון.')}
+    ${card('bring', 'doc', 'מה להביא', 'תעודת זהות, רשימת תרופות, מכתבים רפואיים אחרונים, הפניה מרופא אם יש, וטלפון טעון. מטופלים עם הפניה או התחייבות פטורים מתשלום המיון.')}</div>`)}</div>`;
+  },
+  about(r) {
+    return pageHead(navL('about'), S.lang === 'he' ? 'בית חולים בנצרת מאז 1861: רפואה מתקדמת, ושורשים עמוקים בקהילה.' : '', []) + `<div class="wrap page-body">${trNote()}${heOnly(`
+    <section class="block split" id="sec-history"><div><h2>ההיסטוריה שלנו</h2><p>בשנת 1861 פתח רופא צעיר בשליחות של אגודת המיסיון הרפואי של אדינבורו (EMMS) מרפאה קטנה בנצרת. מאז גדלה המרפאה לבית חולים כללי שמשרת את תושבי נצרת והגליל, יהודים וערבים, מכל הדתות.</p><p>בני המקום מכירים אותו בשם ״בית החולים האנגלי״. השם נשאר, והמחויבות לקהילה נשארה איתו.</p></div>${art('building', { he: 'בניין היסטורי, ארכיון' }, 'side')}</section>
+    <section class="block" id="sec-timeline"><h2>ציוני דרך</h2><ol class="timeline"><li><b>1861</b><span>פתיחת המרפאה הראשונה בנצרת</span></li><li><b>שנות ה־1900</b><span>הקמת בניין בית החולים על הגבעה (לאימות)</span></li><li><b>שנות ה־1950</b><span>פתיחת בית ספר לאחיות (לאימות)</span></li><li><b>היום</b><span>בית חולים כללי עם מחלקות אשפוז, מרפאות ומכונים</span></li></ol></section>
+    <section class="block" id="sec-values"><h2>ערכים וקהילה</h2><div class="cols3"><div><h3>${ic('heartHand')} יחס אישי</h3><p>כל מטופל הוא אדם עם שם, משפחה וסיפור.</p></div><div><h3>${ic('users')} כולם שווים</h3><p>צוות ומטופלים מכל הקהילות, באותו מקום ובאותו יחס.</p></div><div><h3>${ic('globe')} בשפה שלך</h3><p>שירות בערבית, בעברית ובאנגלית, בכל מחלקה.</p></div></div></section>
+    <section class="block" id="sec-management"><h2>הנהלה</h2><p>רשימת חברי ההנהלה, המנהל הרפואי ומנהלת הסיעוד תופיע כאן לפי החומר שיתקבל מבית החולים.</p></section>
+    <section class="block" id="sec-quality"><h2>איכות ובטיחות</h2><p>מקום להסמכות, לתכניות איכות ולדוחות שקיפות. כאן גם הצהרת הנגישות ומדיניות הפרטיות.</p></section>`)}</div>`;
+  },
+  news(r) {
+    return pageHead(navL('news'), '', []) + `<div class="wrap page-body"><section class="block" id="sec-updates"><div class="news-list">${NEWS.map(n => `<article class="news-item"><time datetime="${n.date}">${fmtDate(n.date)}</time><span class="tag">${L(n.cat)}</span><h2>${L(n.t)}</h2>${S.lang === 'he' ? `<p>${n.x}</p>` : ''}</article>`).join('')}</div></section>
+    <section class="block" id="sec-events">${trNote()}${heOnly(`<h2>אירועים והרצאות</h2><ul class="events"><li><b>${num('19.11')}</b><span>הרצאה להורים: הכנת ילד לאשפוז · אולם ההרצאות</span></li><li><b>${num('26.11')}</b><span>יום עיון לאחיות: טיפול בפצעים · בית הספר לסיעוד</span></li><li><b>${num('03.12')}</b><span>סיור מקוון בחדרי הלידה · בזום</span></li></ul>`)}</section></div>`;
+  },
+  careers(r) {
+    return pageHead(navL('careers'), S.lang === 'he' ? 'בואו לעבוד במקום שבו רפואה פוגשת קהילה.' : '', []) + `<div class="wrap page-body">${trNote()}${heOnly(`
+    <section class="block" id="sec-jobs"><h2>משרות פתוחות</h2><ul class="jobs">${JOBS.map(j => `<li><div><b>${j.t}</b><small>${j.k}</small></div><a class="btn ghost sm" href="#contact-form">הגשת מועמדות</a></li>`).join('')}</ul></section>
+    <section class="block" id="sec-students"><h2>סטודנטים והתמחות</h2><p>בית החולים מקבל סטודנטים לרפואה ולסיעוד, ומתמחים במגוון תחומים, בליווי אישי של רופאים בכירים.</p></section>
+    <section class="block" id="sec-volunteer"><h2>התנדבות</h2><p>מתנדבים מלווים מטופלים, מסייעים בקבלה ומשמחים ילדים במחלקה. אפשר להתנדב גם כמה שעות בשבוע.</p></section>`)}</div>`;
+  },
+  donate(r) {
+    return pageHead(navL('donate'), S.lang === 'he' ? 'כל תרומה הופכת לציוד, לטיפול ולחיוך של ילד במחלקה.' : '', []) + `<div class="wrap page-body">${trNote()}${heOnly(`
+    <section class="block" id="sec-give"><h2>תרומה מקוונת</h2><form class="donate-form" data-form="donate"><div class="amounts">${[100, 250, 500, 1000].map((a, i) => `<label><input type="radio" name="amt" value="${a}" ${i === 1 ? 'checked' : ''}><span>${num('₪' + a)}</span></label>`).join('')}<label><input type="radio" name="amt" value="other"><span>סכום אחר</span></label></div><div class="field"><label for="dn-name">שם התורם</label><input id="dn-name" name="name"></div><p class="demo-note">${ic('lock')} ${t('demoNote')}</p><button class="btn primary">לתרומה</button><p class="form-ok" hidden>${ic('check')} תודה! (הדגמה: לא בוצע חיוב)</p></form></section>
+    <section class="block" id="sec-projects"><h2>פרויקטים שצריכים אתכם</h2><div class="cols3"><div><h3>${ic('baby')} ציוד לפגייה</h3><p>אינקובטור חדש ומוניטורים לפגים.</p></div><div><h3>${ic('child')} פינת משחק בילדים</h3><p>חידוש חדר המשחקים במחלקת הילדים.</p></div><div><h3>${ic('heart')} מכשיר אקו נייד</h3><p>אבחון לב ליד המיטה, גם במיון.</p></div></div></section>
+    <section class="block" id="sec-friends"><h2>ידידי בית החולים</h2><p>אגודות ידידים בארץ ובעולם תומכות בבית החולים כבר עשרות שנים. הצטרפו לרשימת התפוצה ותשמעו ראשונים על פרויקטים חדשים.</p></section>`)}</div>`;
+  },
+  search(r) {
+    const q = S.q, ds = DEPTS.filter(d => matchQ(q, d.name, d.short, d.services.join(' '))), dc = DOCS.filter(d => matchQ(q, d.name, d.focus, dept(d.dept).name));
+    const pg = NAV.flatMap(n => n.items.map(i => ({ ...i, g: n }))).filter(i => matchQ(q, i.l, i.g.l));
+    const total = ds.length + dc.length + pg.length;
+    return pageHead(`${t('search')}: ${esc(q) || '…'}`, `${num(total)} ${t('results')}`, []) + `<div class="wrap page-body">${searchForm('search-page', 'q-page', true)}
+    ${total ? '' : `<p class="empty">${t('noResults')}</p>`}
+    ${ds.length ? `<section class="block"><h2>${navL('departments')}</h2><ul class="res">${ds.map(d => `<li><a href="#dept-${d.id}">${ic(d.ic)}<span><b>${L(d.name)}</b><small>${L(d.short)}</small></span></a></li>`).join('')}</ul></section>` : ''}
+    ${dc.length ? `<section class="block"><h2>${t('doctors')}</h2><ul class="res">${dc.map(d => `<li><a href="#doctor-${d.id}">${avatar(d, 'sm')}<span><b>${L(d.name)}</b><small>${L(dept(d.dept).name)}</small></span></a></li>`).join('')}</ul></section>` : ''}
+    ${pg.length ? `<section class="block"><h2>${t('quickLinks')}</h2><ul class="res">${pg.map(i => `<li><a href="#${i.r}">${ic('fwd', 'fw')}<span><b>${L(i.l)}</b><small>${L(i.g.l)}</small></span></a></li>`).join('')}</ul></section>` : ''}</div>`;
+  },
+  notFound() { return pageHead('404', t('noResults')) + `<div class="wrap page-body"><a class="btn primary" href="#home">${t('home')}</a></div>`; }
+};
+
+/* ===== Router and render ===== */
+function parse() {
+  const h = decodeURIComponent(location.hash.slice(1)) || 'home';
+  if (PAGES.includes(h)) return { page: h };
+  if (h.startsWith('dept-')) return { page: 'dept', id: h.slice(5) };
+  if (h.startsWith('doctor-')) return { page: 'doctor', id: h.slice(7) };
+  for (const p of PAGES) if (h.startsWith(p + '-')) return { page: p, sec: h.slice(p.length + 1) };
+  return { page: 'home' };
+}
+function viewFor(r) { return VIEW[r.page] || SHARED[r.page] || SHARED.notFound; }
+function renderMain(keep) {
+  const r = parse(), y = window.scrollY, m = document.getElementById('main');
+  if (r.page === 'appointment' && r.sec === 'imaging' && !S.appt.dept) { S.appt.dept = 'imaging'; S.appt.step = 2; }
+  m.innerHTML = viewFor(r).call(VIEW, r);
+  m.dataset.page = r.page;
+  const g = GROUP_OF[r.page] || r.page;
+  document.querySelectorAll('.mega li[data-g]').forEach(li => li.classList.toggle('on', li.dataset.g === g));
+  document.querySelectorAll('[data-route]').forEach(a => a.classList.toggle('on', a.dataset.route === g));
+  if (keep) window.scrollTo(0, y);
+  else if (r.sec && document.getElementById('sec-' + r.sec)) document.getElementById('sec-' + r.sec).scrollIntoView({ block: 'start' });
+  else window.scrollTo(0, 0);
+  VIEW.after && VIEW.after(r);
+}
+function renderAll() {
+  const d = document.documentElement; d.lang = S.lang; d.dir = LANGS[S.lang].dir;
+  document.getElementById('app').innerHTML = VIEW.shell();
+  renderMain(false);
+}
+function store(k, v) { try { localStorage.setItem(STYLE_ID + '-' + k, v); } catch (e) { } }
+function load(k) { try { return localStorage.getItem(STYLE_ID + '-' + k); } catch (e) { return null; } }
+function syncDrawer() { const dr = document.querySelector('.drawer'); if (dr) dr.hidden = !S.menu; document.body.classList.toggle('locked', S.menu); }
+
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-act]');
+  const link = e.target.closest('a[href^="#"]');
+  if (link && !a) { if (S.menu) { S.menu = false; syncDrawer(); } if (link.getAttribute('href') === location.hash) { e.preventDefault(); renderMain(false); } document.activeElement && document.activeElement.blur && link.closest('.mega') && link.blur(); return; }
+  if (!a) { if (S.menu && e.target.classList.contains('drawer')) { S.menu = false; syncDrawer(); } return; }
+  const v = a.dataset.v;
+  switch (a.dataset.act) {
+    case 'lang': S.lang = v; store('lang', v); renderAll(); break;
+    case 'theme': { const nx = isDark() ? 'light' : 'dark'; document.documentElement.dataset.theme = nx; store('theme', nx); a.innerHTML = ic(isDark() ? 'sun' : 'moon'); document.querySelectorAll('[data-act="theme"]').forEach(b => b.innerHTML = ic(isDark() ? 'sun' : 'moon')); break; }
+    case 'menu': S.menu = !S.menu; syncDrawer(); if (S.menu) { const i = document.querySelector('.drawer input'); i && i.focus({ preventScroll: true }); } break;
+    case 'appt': if (a.dataset.day) S.appt.day = a.dataset.day; apptSet(a.dataset.k, v); break;
+    case 'appt-step': S.appt.step = +v; renderMain(true); break;
+    case 'appt-reset': S.appt = { step: 1, dept: '', doc: '', day: '', time: '' }; renderMain(false); break;
+    case 'appt-doc': { const d = doc(v); S.appt = { step: 3, dept: d.dept, doc: d.id, day: '', time: '' }; location.hash = 'appointment'; break; }
+    case 'appt-dept': S.appt = { step: 2, dept: v, doc: '', day: '', time: '' }; location.hash = 'appointment'; break;
+    case 'appt-quick': { const d = doc(v), ff = firstFree(v); S.appt = { step: 4, dept: d.dept, doc: v, day: ff.k, time: ff.tm }; location.hash = 'appointment'; break; }
+    case 'set': S[a.dataset.k] = v; renderMain(true); break;
+    default: VIEW.act && VIEW.act(a);
+  }
+});
+document.addEventListener('submit', e => {
+  const f = e.target, k = f.dataset.form; if (!k) return; e.preventDefault();
+  if (k === 'search') { S.q = (f.q.value || '').trim(); S.menu = false; if (location.hash === '#search') renderMain(false); else location.hash = 'search'; return; }
+  if (k === 'appt') { S.appt.name = f.name.value; S.appt.ref = 'NZ-' + (10000 + hash(f.name.value + S.appt.day + S.appt.time) % 90000); S.appt.step = 5; renderMain(false); return; }
+  const ok = f.querySelector('.form-ok'); if (ok) { ok.hidden = false; f.querySelectorAll('input:not([type=radio]),textarea').forEach(i => i.value = ''); }
+});
+document.addEventListener('input', e => {
+  if (e.target.dataset.appt) { apptSet(e.target.dataset.appt, e.target.value); return; }
+  const b = e.target.dataset.bind; if (!b) return; S[b] = e.target.value;
+  if (['dq', 'ddept', 'dlang'].includes(b)) { const el = document.getElementById('doc-results'); if (el) el.innerHTML = VIEW.docResults(); }
+  if (b === 'deptq') { const el = document.getElementById('dept-results'); if (el) el.innerHTML = VIEW.deptResults(); }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && S.menu) { S.menu = false; syncDrawer(); } });
+window.addEventListener('hashchange', () => { S.menu = false; syncDrawer(); renderMain(false); });
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => document.querySelectorAll('[data-act="theme"]').forEach(b => b.innerHTML = ic(isDark() ? 'sun' : 'moon')));
+function boot() {
+  const l = load('lang'); if (LANGS[l]) S.lang = l;
+  const th = load('theme'); if (th === 'dark' || th === 'light') document.documentElement.dataset.theme = th;
+  renderAll();
+}
+
+/* ===== Style A: institutional, clean, white and blue ===== */
+const STYLE_ID = 'nz-a';
+const HA = {
+  eyebrow: { he: 'בית חולים כללי · נצרת והגליל', ar: 'مستشفى عام · الناصرة والجليل', en: 'General hospital · Nazareth & Galilee' },
+  heroT: { he: 'רפואה מתקדמת, בשפה שלך, בלב נצרת', ar: 'طبّ متقدّم، بلغتك، في قلب الناصرة', en: 'Advanced care, in your language, in the heart of Nazareth' },
+  heroP: { he: 'מאז 1861 אנחנו מטפלים בתושבי נצרת והגליל. 14 מחלקות ומכונים, מיון פתוח מסביב לשעון, וצוות שמדבר איתך בעברית, בערבית ובאנגלית.', ar: 'منذ 1861 نعالج أهالي الناصرة والجليل. 14 قسماً ومعهداً، طوارئ مفتوحة على مدار الساعة، وطاقم يتحدث معك بالعربية والعبرية والإنجليزية.', en: 'Since 1861 we have cared for the people of Nazareth and the Galilee. 14 departments and institutes, an ER open around the clock, and staff who speak with you in Arabic, Hebrew and English.' },
+  results: { he: 'תוצאות בדיקות', ar: 'نتائج الفحوصات', en: 'Test results' },
+  deptsP: { he: 'מצאו את המחלקה הנכונה ואת מי שמטפל בה.', ar: 'اعثروا على القسم المناسب ومن يعالج فيه.', en: 'Find the right department and the people who run it.' },
+  erP: { he: 'במצב מסכן חיים חייגו 101. בכל מקרה אחר, המיון מקבל מבוגרים, ילדים ויולדות בכל שעה.', ar: 'في حالة تهدد الحياة اتصلوا بـ 101. في أي حالة أخرى تستقبل الطوارئ البالغين والأطفال والحوامل في كل ساعة.', en: 'If life is at risk, call 101. Otherwise our ER receives adults, children and women in labour at any hour.' },
+  whyT: { he: 'למה לבחור בבית החולים נצרת', ar: 'لماذا مستشفى الناصرة', en: 'Why Nazareth Hospital' },
+  why: [
+    [{ he: 'יחס אישי, לא מספר בתור', ar: 'معاملة شخصية، لست رقماً في الدور', en: 'Personal care, not a queue number' }, { he: 'צוות קבוע במחלקה שמכיר את המטופל ואת המשפחה.', ar: 'طاقم ثابت في القسم يعرف المريض وعائلته.', en: 'A steady ward team that knows the patient and the family.' }, 'heartHand'],
+    [{ he: 'רפואה מתקדמת קרוב לבית', ar: 'طب متقدم قريب من البيت', en: 'Advanced medicine close to home' }, { he: 'צנתורים, דימות וניתוחים זעיר־פולשניים, בלי לנסוע למרכז.', ar: 'قسطرة وتصوير وجراحة طفيفة التوغل دون السفر إلى المركز.', en: 'Cath lab, imaging and minimally invasive surgery without travelling to the centre.' }, 'heart'],
+    [{ he: 'שלוש שפות, קהילה אחת', ar: 'ثلاث لغات، مجتمع واحد', en: 'Three languages, one community' }, { he: 'כל הסבר, טופס ומכתב שחרור בשפה שנוחה לך.', ar: 'كل شرح ونموذج ورسالة خروج باللغة التي تناسبك.', en: 'Every explanation, form and discharge letter in the language you prefer.' }, 'globe']
+  ],
+  stats: [['1861', { he: 'שנת הייסוד', ar: 'سنة التأسيس', en: 'Founded' }], ['24/7', { he: 'מיון פתוח', ar: 'طوارئ مفتوحة', en: 'ER open' }], ['3', { he: 'שפות שירות', ar: 'لغات خدمة', en: 'Service languages' }], ['14', { he: 'מחלקות ומכונים', ar: 'أقسام ومعاهد', en: 'Departments & institutes' }]],
+  docsT: { he: 'הכירו את מנהלי המחלקות', ar: 'تعرّفوا على مدراء الأقسام', en: 'Meet our department heads' },
+  visitT: { he: 'לפני שמגיעים', ar: 'قبل الوصول', en: 'Before you come' },
+  visitHours: { he: 'מחלקות אשפוז', ar: 'أقسام المبيت', en: 'Inpatient wards' },
+  visitPark: { he: 'חניון 24 שעות ליד הכניסה הראשית, חניות נכים ליד המיון, ותחנת אוטובוס בשער.', ar: 'موقف سيارات على مدار الساعة قرب المدخل الرئيسي، مواقف لذوي الإعاقة قرب الطوارئ، ومحطة حافلات عند البوابة.', en: '24-hour car park by the main entrance, accessible bays by the ER, and a bus stop at the gate.' },
+  donT: { he: 'שותפים לרפואה בגליל', ar: 'شركاء في الطب في الجليل', en: 'Partners in Galilee healthcare' },
+  donP: { he: 'תרומה לבית החולים מממנת ציוד מציל חיים לפגייה, למיון ולמחלקת הילדים.', ar: 'التبرع للمستشفى يموّل معدات منقذة للحياة للخدج والطوارئ وقسم الأطفال.', en: 'Donations fund life-saving equipment for the neonatal unit, the ER and the children’s ward.' },
+  donB: { he: 'לתרומה', ar: 'تبرّع الآن', en: 'Donate' },
+  steps: { he: 'שלב', ar: 'خطوة', en: 'Step' },
+  summary: { he: 'סיכום התור', ar: 'ملخص الدور', en: 'Summary' },
+  writeUs: { he: 'כתבו לנו', ar: 'اكتبوا لنا', en: 'Write to us' },
+  subject: { he: 'נושא הפנייה', ar: 'موضوع التوجه', en: 'Subject' },
+  message: { he: 'תוכן הפנייה', ar: 'نص التوجه', en: 'Message' },
+  sentOk: { he: 'הפנייה התקבלה (הדגמה). נחזור אליכם תוך 2 ימי עבודה.', ar: 'تم استلام التوجه (عرض توضيحي). سنعود إليكم خلال يومي عمل.', en: 'Received (demo). We reply within 2 working days.' }
+};
+const hl = k => L(HA[k]);
+
+Object.assign(VIEW, {
+  shell() {
+    return `${sketchBar()}
+    <div class="util"><div class="wrap util-in"><span class="er-pill">${ic('pulse')} ${t('erOpen')} <span class="sepdot">·</span> ${t('erLine')} ${num(HOSP.er)}</span>
+      <span class="util-links"><a href="#careers">${navL('careers')}</a><a href="#donate">${navL('donate')}</a><a href="#contact">${navL('contact')}</a></span>
+      <span class="util-tools">${langSwitch()}${themeBtn()}</span></div></div>
+    <header class="hdr"><div class="wrap hdr-in">
+      <button type="button" class="icon-btn burger" data-act="menu" aria-label="${t('menu')}">${ic('menu')}</button>
+      <a class="btn primary hdr-book" href="#appointment">${ic('cal')}<span>${t('book')}</span></a>
+      ${searchForm('hdr-search', 'q-top')}
+      <a class="brand" href="#home"><span class="brand-t"><b class="disp">${L(HOSP.name)}</b><small>${L(HOSP.sub)}</small></span></a>
+    </div><div class="navrow"><div class="wrap">${megaNav('', ['departments', 'doctors', 'appointment', 'visitors', 'emergency', 'about', 'news'])}</div></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="ftr"><div class="wrap ftr-in">
+      <div class="fabout"><b class="disp">${L(HOSP.name)}</b><p>${t('footerAbout')}</p><p class="addr">${ic('pin')} ${L(HOSP.addr)}</p>${phonesList()}</div>
+      <div class="fcols">${footerCols(['departments', 'visitors', 'emergency', 'about', 'careers'])}</div>
+    </div><div class="wrap">${footerBase()}</div></footer>${drawer()}`;
+  },
+  phead(title, lead, crumbs) {
+    return `<header class="phead"><div class="wrap"><nav class="crumbs" aria-label="breadcrumbs"><a href="#home">${t('home')}</a>${crumbs.map(c => `${ic('fwd', 'sep')}<a href="#${c[0]}">${c[1]}</a>`).join('')}${ic('fwd', 'sep')}<span aria-current="page">${title}</span></nav><h1>${title}</h1>${lead ? `<p class="lead">${lead}</p>` : ''}</div></header>`;
+  },
+  home() {
+    const quick = [['appointment', 'cal', t('book')], ['doctors', 'user', t('findDoctor')], ['visitors-records', 'doc', hl('results')], ['visitors-hours', 'clock', t('hoursTitle')], ['visitors-parking', 'car', t('parking')]];
+    return `<section class="hero"><div class="wrap hero-in"><div class="hero-txt"><p class="eyebrow">${hl('eyebrow')}</p><h1>${hl('heroT')}</h1><p class="lead">${hl('heroP')}</p>
+      <div class="hero-cta"><a class="btn primary" href="#appointment">${ic('cal')} ${t('book')}</a><a class="btn ghost" href="#doctors">${ic('user')} ${t('findDoctor')}</a></div>
+      ${searchForm('hero-search', 'q-hero', true)}</div>${art('hills', { he: 'מבט על בית החולים ונצרת', ar: 'منظر للمستشفى والناصرة', en: 'View of the hospital and Nazareth' }, 'hero-art')}</div></section>
+    <section class="quick"><div class="wrap"><ul class="quick-row">${quick.map(q => `<li><a href="#${q[0]}">${ic(q[1])}<span>${q[2]}</span>${ic('fwd', 'fw')}</a></li>`).join('')}</ul></div></section>
+    <section class="er-band"><div class="wrap er-in"><div><h2>${ic('pulse')} ${t('erOpen')}</h2><p>${hl('erP')}</p></div><dl class="er-nums"><div><dt>${t('erLine')}</dt><dd>${num(HOSP.er)}</dd></div><div><dt>${t('mda')}</dt><dd>${num('101')}</dd></div><div><dt>${t('waitNow')}</dt><dd>${num('35')} ${t('minutes')} <small>(${t('sample')})</small></dd></div></dl></div></section>
+    <section class="sec"><div class="wrap"><div class="sec-head"><div><h2>${navL('departments')}</h2><p class="muted">${hl('deptsP')}</p></div><a class="lnk" href="#departments">${t('allDepts')} ${ic('fwd', 'fw')}</a></div>
+      <ul class="dgrid">${DEPTS.slice(0, 8).map(d => `<li><a href="#dept-${d.id}"><span class="dic">${ic(d.ic)}</span><b>${L(d.name)}</b><small>${L(d.short)}</small></a></li>`).join('')}</ul></div></section>
+    <section class="sec alt"><div class="wrap why"><div><h2>${hl('whyT')}</h2><ul class="why-list">${HA.why.map(w => `<li>${ic(w[2])}<div><h3>${L(w[0])}</h3><p>${L(w[1])}</p></div></li>`).join('')}</ul></div>
+      <dl class="stats">${HA.stats.map(s => `<div><dt>${L(s[1])}</dt><dd>${num(s[0])}</dd></div>`).join('')}</dl></div></section>
+    <section class="sec"><div class="wrap"><div class="sec-head"><h2>${hl('docsT')}</h2><a class="lnk" href="#doctors">${t('findDoctor')} ${ic('fwd', 'fw')}</a></div>
+      <ul class="docrow">${DOCS.filter(d => d.role === 'head').slice(0, 4).map(d => `<li><a href="#doctor-${d.id}">${avatar(d)}<b>${L(d.name)}</b><small>${L(dept(d.dept).name)}</small></a></li>`).join('')}</ul><p class="small muted">${t('examples')}</p></div></section>
+    <section class="sec alt"><div class="wrap two"><div><div class="sec-head"><h2>${navL('news')}</h2><a class="lnk" href="#news">${t('allNews')} ${ic('fwd', 'fw')}</a></div>
+      <ul class="nlist">${NEWS.slice(0, 3).map(n => `<li><a href="#news"><time datetime="${n.date}">${fmtDate(n.date)}</time><span class="tag">${L(n.cat)}</span><b>${L(n.t)}</b></a></li>`).join('')}</ul></div>
+      <div class="visit"><h2>${hl('visitT')}</h2><div class="vcard"><h3>${ic('clock')} ${t('hoursTitle')}</h3><p>${hl('visitHours')}: ${num('11:00–13:00')}, ${num('16:00–20:30')}</p><a class="lnk" href="#visitors-hours">${t('more')} ${ic('fwd', 'fw')}</a></div>
+      <div class="vcard"><h3>${ic('car')} ${t('parking')}</h3><p>${hl('visitPark')}</p><a class="lnk" href="#visitors-parking">${t('more')} ${ic('fwd', 'fw')}</a></div></div></div></section>
+    <section class="don"><div class="wrap don-in"><div><h2>${hl('donT')}</h2><p>${hl('donP')}</p></div><a class="btn light" href="#donate">${ic('heartHand')} ${hl('donB')}</a></div></section>`;
+  },
+  departments(r) {
+    return this.phead(navL('departments'), hl('deptsP'), []) + `<div class="wrap page-body"><div class="filter-bar"><div class="field"><label for="deptq">${t('search')}</label><input id="deptq" data-bind="deptq" type="search" value="${esc(S.deptq)}" placeholder="${t('searchPh')}"></div></div><div id="dept-results">${this.deptResults()}</div></div>`;
+  },
+  deptResults() {
+    const list = filterDepts();
+    if (!list.length) return `<p class="empty">${t('noResults')}</p>`;
+    return DEPT_GROUPS.map(g => { const ds = list.filter(d => d.type === g); if (!ds.length) return ''; return `<section class="block" id="sec-${g}"><h2>${t(g)} <span class="count">${num(ds.length)}</span></h2><ul class="drows">${ds.map(d => `<li><a href="#dept-${d.id}"><span class="dic">${ic(d.ic)}</span><span class="dtx"><b>${L(d.name)}</b><small>${L(d.short)}</small></span>${ic('fwd', 'fw')}</a></li>`).join('')}</ul></section>`; }).join('');
+  },
+  dept(r) {
+    const d = dept(r.id); if (!d) return SHARED.notFound();
+    const team = docsOf(d.id);
+    return this.phead(L(d.name), L(d.short), [['departments', navL('departments')], ['departments-' + d.type, t(d.type)]]) + `<div class="wrap page-body"><div class="dept-layout"><div class="dept-main">
+      ${art('clinic', { he: 'צוות המחלקה בעבודה', ar: 'طاقم القسم أثناء العمل', en: 'The ward team at work' }, 'dept-art')}${trNote()}
+      ${heOnly(`<section class="block"><h2>על המחלקה</h2><p>${d.about}</p></section><section class="block"><h2>${UI.services.he}</h2><ul class="ticks two-col">${d.services.map(s => `<li>${ic('check')} ${s}</li>`).join('')}</ul></section>`)}
+      <section class="block"><h2>${t('team')}</h2><ul class="team">${team.map(m => `<li><a href="#doctor-${m.id}">${avatar(m)}<span><b>${L(m.name)}</b><small>${m.id === d.head ? t('head') : roleL(m)}</small></span></a></li>`).join('')}</ul><p class="small muted">${t('examples')}</p></section></div>
+      <aside class="dept-side"><div class="side-box"><h3>${t('contactUs')}</h3><dl class="kv"><div><dt>${ic('pin')} ${t('location')}</dt><dd lang="he">${d.where}</dd></div><div><dt>${ic('phone')} ${t('phoneLbl')}</dt><dd>${num('04-XXX-' + (2000 + hash(d.id) % 7000))}</dd></div><div><dt>${ic('clock')}</dt><dd>${d.type === 'inpatient' ? t('open247') : num('08:00–15:00')}</dd></div></dl>
+      ${d.id === 'emergency-dept' ? `<a class="btn primary block" href="#emergency">${navL('emergency')}</a>` : `<button type="button" class="btn primary block" data-act="appt-dept" data-v="${d.id}">${ic('cal')} ${t('book')}</button>`}</div>
+      <div class="side-box muted-box"><h3>${ic('alert')} ${t('emergencyNow')}</h3><p>${t('erLine')} ${num(HOSP.er)}</p></div></aside></div></div>`;
+  },
+  doctors(r) {
+    return this.phead(navL('doctors'), '', []) + `<div class="wrap page-body"><section class="block">${docFilters('filter-bar')}<div id="doc-results">${this.docResults()}</div></section>${doctorsExtras()}</div>`;
+  },
+  docResults() {
+    const list = filterDocs();
+    if (!list.length) return `<p class="empty">${t('noResults')}</p>`;
+    return `<p class="muted small">${num(list.length)} ${t('results')} · ${t('examples')}</p><div class="tbl-wrap"><table class="tbl doc-tbl"><thead><tr><th>${t('doctors')}</th><th>${t('pickDept')}</th><th>${t('speaks')}</th><th></th></tr></thead><tbody>${list.map(d => `<tr><td><a class="dname" href="#doctor-${d.id}">${avatar(d, 'sm')}<span><b>${L(d.name)}</b><small>${roleL(d)}</small></span></a></td><td>${L(dept(d.dept).name)}</td><td>${langsL(d)}</td><td><button type="button" class="btn ghost sm" data-act="appt-doc" data-v="${d.id}">${t('bookShort')}</button></td></tr>`).join('')}</tbody></table></div>`;
+  },
+  appointment(r) {
+    const A = S.appt, names = [t('pickDept'), t('pickDoctor'), t('pickTime'), t('details'), t('confirm')];
+    let body = '';
+    if (A.step === 1) body = `<h2>${names[0]}</h2><div class="pick-grid">${APPT_DEPTS().map(d => `<button type="button" class="pick ${A.dept === d.id ? 'on' : ''}" data-act="appt" data-k="dept" data-v="${d.id}">${ic(d.ic)}<span>${L(d.name)}</span></button>`).join('')}</div>`;
+    else if (A.step === 2) body = `<h2>${names[1]}</h2><div class="pick-list"><button type="button" class="pick row" data-act="appt" data-k="doc" data-v="any">${ic('users')}<span><b>${t('anyDoctor')}</b></span></button>${docsOf(A.dept).map(d => { const ff = firstFree(d.id); return `<button type="button" class="pick row ${A.doc === d.id ? 'on' : ''}" data-act="appt" data-k="doc" data-v="${d.id}">${avatar(d, 'sm')}<span><b>${L(d.name)}</b><small>${roleL(d)} · ${langsL(d)}</small></span>${ff ? `<em>${t('nearest')}: ${dayLbl(ff.d).dow} ${num(dayLbl(ff.d).dm)}</em>` : ''}</button>`; }).join('')}</div><div class="row-btns"><button type="button" class="btn ghost" data-act="appt-step" data-v="1">${ic('fwd', 'bk')} ${t('back')}</button></div>`;
+    else if (A.step === 3) { const id = apptDocId(), days = apptDays(10); const day = A.day || dayKey(days[0]);
+      body = `<h2>${names[2]}</h2><div class="days">${days.map(d => { const k = dayKey(d), l = dayLbl(d); return `<button type="button" class="day ${k === day ? 'on' : ''}" data-act="appt" data-k="day" data-v="${k}"><small>${l.dow}</small><b>${num(l.dm)}</b><em>${num(freeCount(id, k))} ${t('free')}</em></button>`; }).join('')}</div>
+      <div class="slots">${slots(id, day).map(s => `<button type="button" class="slot" ${s.free ? `data-act="appt" data-k="time" data-v="${s.tm}"` : 'disabled'} data-day="${day}">${num(s.tm)}</button>`).join('')}</div><div class="row-btns"><button type="button" class="btn ghost" data-act="appt-step" data-v="2">${ic('fwd', 'bk')} ${t('back')}</button></div>`; }
+    else if (A.step === 4) body = `<h2>${names[3]}</h2>${apptForm()}`;
+    else body = `<div class="done">${ic('check')}<h2>${t('booked')}</h2><p class="ref">${num(A.ref)}</p><dl class="kv">${apptSummary().map(r => `<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join('')}</dl><p class="demo-note">${ic('lock')} ${t('demoNote')}</p><button type="button" class="btn primary" data-act="appt-reset">${t('newAppt')}</button></div>`;
+    const sum = apptSummary();
+    return this.phead(navL('appointment'), '', []) + `<div class="wrap page-body"><ol class="stepper">${names.map((n, i) => `<li class="${A.step === i + 1 ? 'cur' : A.step > i + 1 ? 'past' : ''}"><span>${num(i + 1)}</span><em>${n}</em></li>`).join('')}</ol>
+      <div class="appt-layout"><div class="appt-body">${body}</div><aside class="side-box appt-sum"><h3>${hl('summary')}</h3>${sum.length ? `<dl class="kv">${sum.map(r => `<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join('')}</dl>` : `<p class="muted">—</p>`}<p class="small muted">${t('apptLine')} ${num(HOSP.appt)}</p></aside></div>${apptExtras()}</div>`;
+  },
+  contact(r) {
+    return this.phead(navL('contact'), '', []) + `<div class="wrap page-body"><div class="contact-grid">
+      <section class="block" id="sec-phones"><h2>${ic('phone')} ${L(NAV[9].items[0].l)}</h2><div class="tbl-wrap"><table class="tbl"><tbody>
+        <tr><td>${t('switchboard')}</td><td>${num(HOSP.phone)}</td></tr><tr><td>${t('erLine')}</td><td>${num(HOSP.er)}</td></tr><tr><td>${t('apptLine')}</td><td>${num(HOSP.appt)}</td></tr><tr><td>${navL('emergency')} · ${t('mda')}</td><td>${num('101')}</td></tr><tr><td>${L({ he: 'דוא״ל', ar: 'البريد الإلكتروني', en: 'Email' })}</td><td><bdi dir="ltr">${HOSP.email}</bdi></td></tr></tbody></table></div>
+        <p class="addr">${ic('pin')} ${L(HOSP.addr)}</p>${art('hills', { he: 'מפת הגעה', ar: 'خريطة الوصول', en: 'Map' }, 'map')}</section>
+      <section class="block" id="sec-form"><h2>${ic('mail')} ${hl('writeUs')}</h2><form class="cform" data-form="contact">
+        <div class="field"><label for="c-name">${t('fullName')}</label><input id="c-name" required></div>
+        <div class="field"><label for="c-tel">${t('mobile')}</label><input id="c-tel" type="tel" dir="ltr"></div>
+        <div class="field"><label for="c-sub">${hl('subject')}</label><select id="c-sub">${NAV.slice(0, 6).map(n => `<option>${L(n.l)}</option>`).join('')}</select></div>
+        <div class="field"><label for="c-msg">${hl('message')}</label><textarea id="c-msg"></textarea></div>
+        <p class="demo-note">${ic('lock')} ${t('demoNote')}</p><button class="btn primary">${t('sendDemo')}</button><p class="form-ok" hidden>${ic('check')} ${hl('sentOk')}</p></form></section></div>
+      <section class="block" id="sec-feedback">${trNote()}${heOnly(`<h2>פניות הציבור</h2><p>יש לכם הערה, תלונה או מחמאה לצוות? נציבת פניות הציבור של בית החולים מטפלת בכל פנייה ועונה בכתב תוך 14 יום. אפשר לפנות בטופס, בדוא״ל או בפגישה אישית בתיאום מראש.</p>`)}</section></div>`;
+  }
+});
+boot();
+
+</script>
+
+</body></html>
